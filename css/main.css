@@ -49,3 +49,8 @@ h2 {
   font-size: 2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
+.coloredFooter{
+  font-size: 0.7rem;
+  color:#fc9f5b;
+}
