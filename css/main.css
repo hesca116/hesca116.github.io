@@ -20,8 +20,8 @@ section {
 
 header,
 footer {
-  background-color: #2d4b99;
-  color: aliceblue;
+  background-color: #e7ecef;
+  color:#2d4b99;
   border-radius: 1rem;
   padding: 1.5rem;
 }
@@ -52,5 +52,5 @@ h2 {
 
 .coloredFooter{
   font-size: 0.7rem;
-  color:#fc9f5b;
+  color:#519872;
 }
