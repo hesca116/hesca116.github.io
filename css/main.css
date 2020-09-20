@@ -1,0 +1,47 @@
+/*  DESIGN SPECS 
+Color Palette https://coolors.co/2d4b99-e7ecef-a3cef1-519872-fc9f5b
+*/
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header,
+nav, 
+main,
+footer,
+section {
+  margin: 1.25rem auto;
+  max-width: 760px;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+header,
+footer {
+  background-color: #2d4b99;
+  color: aliceblue;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+}
+
+img {
+  float: right;
+  margin: 10px;
+  margin-top: -130px;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+h1 {
+  margin-left: 4rem;
+}
+
+h2 {
+  margin: 0em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
