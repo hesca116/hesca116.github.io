@@ -1,12 +1,40 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 38em) {
 
   .main {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;    
+  }
+
+  header,
+  footer {
+    border-radius: 1rem;
+  }
+
+  h1{
+    font-size: 3.5rem;
+  }
+  h2{
+    font-size: 2.2rem;
+  }
+  h3{
+    font-size: 1.4rem;
+  }
+
+  .section01,
+  .section02,
+  .section03 {
+    border-radius: 1em;
   }
 
   .section02 {
     grid-column-start: 2;
   }
+
+  .section03 {
+    display: none;
+  }
+
+  
 
 }

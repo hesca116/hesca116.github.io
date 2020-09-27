@@ -3,4 +3,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .section03{
+    display: inline;
+  }
+  footer{
+    font-size: 0.7rem;
+  }
+  .coloredFooter {
+    font-size: 0.7rem;
+  }
  }
