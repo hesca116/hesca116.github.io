@@ -4,8 +4,8 @@ Color Palette https://coolors.co/2d4b99-e7ecef-a3cef1-519872-fc9f5b
 @import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
 
 body {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 header,
@@ -20,37 +20,37 @@ section {
 
 header,
 footer {
+  text-align: center;
   background-color: #e7ecef;
-  color:#2d4b99;
-  border-radius: 1rem;
+  color: #2d4b99;
   padding: 1.5rem;
 }
 
 footer {
   text-align: center;
-  font-size: small;
+  font-size: 0.7rem;
 }
 
-img {
-  float: right;
-  margin: 10px;
-  //margin-top: -150px;
+header img {
+  margin: 0 auto;
   filter: drop-shadow(0 0 0.75rem black);
 }
 
 h1 {
-  font-size: 3rem;
-  margin-left: 2.4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.4rem 0 0 0 ;
   font-family: 'Dosis', Arial, sans-serif;
 }
 
 h2 {
   margin: 0em;
-  font-size: 2rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
   font-family: 'Khand', sans-serif;
 }
 
-.coloredFooter{
-  font-size: 0.7rem;
-  color:#254083;
+.coloredFooter {
+  font-size: 0.6rem;
+  color: #254083;
 }
