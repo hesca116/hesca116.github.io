@@ -61,6 +61,9 @@ nav ul li a {
   text-decoration-style: double;
   background-color: mediumseagreen;  
 }
+.logo {
+  height: 150px;
+}
 
 h1 {
   text-align: center;
