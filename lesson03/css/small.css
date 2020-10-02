@@ -1,0 +1,78 @@
+/*  DESIGN SPECS 
+Color Palette https://coolors.co/2d4b99-e7ecef-a3cef1-519872-fc9f5b
+*/
+@import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
+
+body {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+header,
+nav,
+main,
+footer,
+section {
+  margin: 0 auto;
+  max-width: 760px;
+  font-family: Tahoma, sans-serif;
+}
+
+header,
+footer {
+  text-align: center;
+  background-color: #e7ecef;
+  color: #2d4b99;
+  padding: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+nav{
+  //background-color: red;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;  
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #2d4b99;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+.active {
+  color: white;
+  text-decoration-style: double;
+  background-color: mediumseagreen;  
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.4rem 0 0 0;
+  font-family: 'Dosis', Arial, sans-serif;
+}
+
+h2 {
+  margin: 0em;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Khand', sans-serif;
+}
+
+.coloredFooter {
+  font-size: 0.6rem;
+  color: #254083;
+}
