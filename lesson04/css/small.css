@@ -1,0 +1,155 @@
+/*  DESIGN SPECS 
+Color Palette https://coolors.co/2d4b99-e7ecef-a3cef1-519872-fc9f5b
+*/
+
+body {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+header{
+  padding-top: 1.5rem;
+}
+
+header,
+nav{
+  margin: 1.25rem auto;
+  max-width: 960px;
+  font-family: Oswald, sans-serif;
+}
+
+header,
+footer {
+  text-align: center;
+  background-color: #99CC33;
+  color: white;
+}
+
+
+nav{
+  background-color: 	#99CC33;
+ 
+}
+
+nav button{
+  margin .2rem, 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.3);
+  overflow: hidden;
+  font-family: 'oswald', sans-serif;
+}
+
+
+nav ul li a{
+  display: block;
+  padding: .8rem 2%; /*make each item bigger for easy finger tapping*/
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a{
+  background-color: grey;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color:	#E6E6E6;
+  color: #58524E;
+}
+
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1.4rem 0 0 0;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+
+h2 {
+  margin: 0.5em;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main {
+  max-width: 900px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.heroImage{
+  max-width: 900px;
+  width: 500px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+.coloredFooter {
+  font-size: 0.6rem;
+  color: #254083;
+}
+
+/*START FOR STYLING FOR FOOTER CONTACT TABLE*/
+.contactTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0px auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contactTable td {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.contactTable th {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.contactTable-row {
+  border-color: transparent;
+  text-align: left;
+  vertical-align: top
+}
+
+/*END FOR STYLING FOR FOOTER CONTACT TABLE*/
