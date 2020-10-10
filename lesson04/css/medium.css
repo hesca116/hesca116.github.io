@@ -3,7 +3,8 @@
     display: none;
   }
 
-  nav ul {
+  nav ul,
+  nav ul.hide {
     display: flex;
   }
 
