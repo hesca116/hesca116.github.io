@@ -9,17 +9,23 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Raleway:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header>
-    <a href="../index.html">Back to Main Page</a>
-    <img src="images/Website Logo - Color themed.png" alt="Weather Logo">
-    <h1>Outdoor Geenie </h1>
-    <p class="accentText1">Find your next adventure!</p>
+    <button onclick="window.location.href='../index.html';">Back to Main Page</button>
+    <section>
+      <img src="images/Website Logo - Color themed.png" alt="Weather Logo">
+      <div>
+        <h1>Outdoor Geenie </h1>
+        <p class="accentText1">Find your next adventure!</p>
+      </div>
+      <button class="hamburguer" onclick="toggleMenu()">&#9776</button>
+    </section>
     <nav>
-      <button onclick="toggleMenu()">&#9776</button>
       <ul id="primaryNav" class="navigation hide">
         <li id="active"><a href="#">Home</a></li>
         <li><a href="#">Preston</a></li>
@@ -27,7 +33,7 @@
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
         <li><a href="#">Gallery</a></li>
-    </ul>
+      </ul>
     </nav>
   </header>
   <main>
@@ -36,50 +42,59 @@
       <img class="heroImage" src="images/HeroImage.jpg" alt="Hero Image placeholder">
       <section class="wSummary">
         <h3>Weather Summary</h3>
-        <p class="articleText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, reiciendis possimus unde consequatur nobis odio aliquid veritatis odit ipsam soluta. Ipsum perspiciatis voluptates aliquam rem veniam, quod atque cupiditate fuga.</p>
+        <p class="articleText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, reiciendis possimus
+          unde consequatur nobis odio aliquid veritatis odit ipsam soluta. Ipsum perspiciatis voluptates aliquam rem
+          veniam, quod atque cupiditate fuga.</p>
       </section>
     </section>
     <section class="mainBottom">
       <h2>Five Day Forecast</h2>
       <article>
         <h3 class="art01">Article 01 Title</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto, dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum perspiciatis et quam excepturi!</p>
-        <img src="../lesson03/images/Website Logo - Color themed.png" alt="placeholder image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
+          dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum
+          perspiciatis et quam excepturi!</p>
+        <img src="../lesson03/images/Family-fun-Hike.jpg" alt="placeholder image">
       </article>
     </section>
   </main>
 
   <footer>
     <section class="footerContact">
-      <p class="contactBox">
+      <div class="contactBox">
         <h3>Contact information</h3>
-        <p class="contactInfo">
-           <table class="contactTable">
-            <tbody>
-              <tr>
-                <td class="contactTable-row"><img src="images/contatct_MapPin.png" alt="Map Icon" height="20px"></td>
-                <td class="contactTable-row">placeholder address</td>
-              </tr>
-              <tr>
-                <td class="contactTable-row"><img src="images/contatct_phone.png" alt="Phone Icon" height="20px"></td>
-                <td class="contactTable-row">111-222-3345</td>
-              </tr>
-              <tr>
-                <td class="contactTable-row"><img src="images/contatct_email.png" alt="eMail Icon" height="20px"></td>
-                <td class="contactTable-row">placeholder@holder.com</td>
-              </tr>
-            </tbody>
-            </table> 
-        </p>
-        <img src="images/map.png" alt="Placeholder Map" height="100px"> <!--according to the wirefrane, this map shows above the contact information in the medium.css and large.css. To solve this, use flex-direction: row-reverse-->
-      </p>
+        <table class="contactTable">
+          <tbody>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_MapPin.png" alt="Map Icon" height="20px"></td>
+              <td class="contactTable-row">placeholder address</td>
+            </tr>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_phone.png" alt="Phone Icon" height="20px"></td>
+              <td class="contactTable-row">111-222-3345</td>
+            </tr>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_email.png" alt="eMail Icon" height="20px"></td>
+              <td class="contactTable-row">placeholder@holder.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="smIcons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+      <img id="map" src="images/map.png" alt="Placeholder Map" height="100px">
+
     </section>
     <section class="footerBar">
-    &copy; <span id="currentYear"></span> | Hector Solano Cambonero | Costa Rica | <a
-      href="https://www.byui.edu/online"> BYU Online Learning</a>
-    <br>
-    <b class="coloredFooter">Last Updated: <span id="lastModified"></span></b>
-  </section>
+      &copy; <span id="currentYear"></span> | Hector Solano Cambonero | Costa Rica |
+      <br>
+      <b class="coloredFooter">Last Updated: <span id="lastModified"></span></b>
+    </section>
   </footer>
 
   <script src="js/footerDates.js"></script>
