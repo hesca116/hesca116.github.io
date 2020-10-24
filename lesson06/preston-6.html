@@ -39,7 +39,17 @@
   <main>
     <section class="mainTop">
       <h2>Preston Idaho</h2>
-      <img class="heroImage" src="images/HeroImage.jpg" alt="Hero Image placeholder">
+      <picture class="responsive">
+        <source
+          srcset="images/heroImageMid700x340.jpg" 
+          media="(min-width: 301px) and (max-width: 700px)"
+        >
+        <source
+          srcset="images/heroImageLarge1000x486.jpg" 
+          media="(min-width: 701px)"
+        >
+        <img class="heroImage" src="images/heroImageSmall400x194.jpg" alt="Hero Image placeholder">
+      </picture>
       <section class="wSummary">
         <h3>Weather Summary</h3>
         <p class="articleText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, reiciendis possimus
@@ -51,11 +61,19 @@
       <h2>Five Day Forecast</h2>
       <article>
         <h3 class="art01">Article 01 Title</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
+        <figure class="artImage">
+          <img src="../lesson03/images/Family-fun-Hike.jpg" alt="placeholder image">
+        </figure>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
           dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum
-          perspiciatis et quam excepturi!</p>
-        <img src="../lesson03/images/Family-fun-Hike.jpg" alt="placeholder image">
-      </article>
+          perspiciatis et quam excepturi! <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
+          dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum
+          perspiciatis et quam excepturi!
+        
+        </p>
+        </article>
     </section>
   </main>
 

@@ -2,6 +2,7 @@
 Color Palette https://coolors.co/2d4b99-e7ecef-a3cef1-519872-fc9f5b
 */
 
+/****************************HTML GENERAL*********************************/
 html,body
 {
     width: 100%;
@@ -10,12 +11,12 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-
+/****************************BODY*********************************/
 body {
   font-size: 12px;
   line-height: 1.4;
 }
-
+/****************************HEADER*********************************/
 header{
   padding: 1.5rem;
 }
@@ -59,7 +60,7 @@ header nav{
   background-color: 	lightgray;
   font-family: Oswald, sans-serif;
 }
-
+/***************************NAVIGATION MENU*********************************/
 .hamburguer{
   margin: .2rem, 2%;
   padding-right: 20px;
@@ -102,7 +103,7 @@ nav ul li a:hover {
   background-color:rgba(0,0,0,0.3);
   color: white;
 }
-
+/****************************BODY*********************************/
 h1 {
   text-align: left;
   font-size: 2.1rem;
@@ -120,7 +121,7 @@ h3 {
   font-size: 22px;
   font-family: 'Oswald', sans-serif;
 }
-
+/****************************BODY MAIN*********************************/
 .main {
   max-width: 900px;
   text-align: center;
@@ -129,14 +130,19 @@ h3 {
   grid-gap: 2em;
 }
 
-.heroImage{
-  max-width: 900px;
-  width: 360px;
+.heroImage{ 
+  width: 100%;
   margin: 0;
 }
 
-article img {
-  width: 360px;
+.artImage{
+  width: 30%;
+  //border: 1px dashed red;/*red border for optimization testing*/
+  float: right;
+}
+
+article figure img {
+  width: 50%;
 }
 
 p{
@@ -144,6 +150,7 @@ p{
   font-size: 15px;
 }
 
+/****************************FOOTER*********************************/
 footer {
   padding: 1.5rem;
   text-align: left;
@@ -155,7 +162,7 @@ footer {
   padding: 20px;
 }
 
-/*START FOR STYLING FOR FOOTER CONTACT TABLE*/
+/*START OF FOOTER CONTACT TABLE*/
 .contactTable {
   text-align: left; 
   float: left;
@@ -192,7 +199,7 @@ footer {
   vertical-align: top
 }
 
-/*END FOR STYLING FOR FOOTER CONTACT TABLE*/
+/*END OF FOOTER CONTACT TABLE*/
 
 .smIcons{
   display:none;
