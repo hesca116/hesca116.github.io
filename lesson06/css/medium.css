@@ -38,15 +38,14 @@
   nav{
     background-color:	#99CC33;
   }
-/* PENDING: FLOAT WEATHER SUMMARY LEFT, I CANT GET THIS TO WORK!
 
-  wSummary{
-    Float: left;
+  main section.wSummary{
+    position: relative;  
+    top: -18.5rem; 
+    left: -25%;
   }
 
-*/
-
-  .footerContact {
+.footerContact {
     display:flex;
     flex-direction: row-reverse;
     justify-content: center;

@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburguer Menu</title>
+  <title>Responsive Images</title>
   <meta name="description" content="Main page for Hector Solano's completed assignments for WDD230">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Raleway:wght@300;400&display=swap"
+  <!--<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Raleway:wght@300;400&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> These fonts are now loaded through webfontload.js--> 
 </head>
 
 <body>
@@ -27,8 +27,8 @@
     </section>
     <nav>
       <ul id="primaryNav" class="navigation hide">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Preston</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
@@ -42,7 +42,7 @@
       <picture class="responsive">
         <source
           srcset="images/heroImageMid700x340.jpg" 
-          media="(min-width: 301px) and (max-width: 700px)"
+          media="(min-width: 451px) and (max-width: 700px)"
         >
         <source
           srcset="images/heroImageLarge1000x486.jpg" 
@@ -52,6 +52,30 @@
       </picture>
       <section class="wSummary">
         <h3>Weather Summary</h3>
+        <table class="sumTable">
+            <tr>
+                <td class="fcol">Currently: </td>
+                <td>Sunny</td>
+            </tr>
+            <tr>
+                <td class="fcol">High: </td>
+                <td>76°F</td>
+            </tr>
+            <tr>
+                <td class="fcol">Wind Chill: </td>
+                <td>25°F</td>
+            </tr>
+            <tr>
+                <td class="fcol">Humidity: </td>
+                <td>69%</td>
+            </tr>
+            <tr>
+                <td class="fcol">Wind Speed: </td>
+                <td>5 mph</td>
+            </tr>
+        </table>
+    </section>
+      <section">
         <p class="articleText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, reiciendis possimus
           unde consequatur nobis odio aliquid veritatis odit ipsam soluta. Ipsum perspiciatis voluptates aliquam rem
           veniam, quod atque cupiditate fuga.</p>
@@ -117,6 +141,8 @@
 
   <script src="js/footerDates.js"></script>
   <script src="js/respMenu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webFontLoad.js"></script>
 </body>
 
 </html>
