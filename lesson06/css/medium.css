@@ -1,4 +1,4 @@
-@media only screen and (min-width: 570px) {
+@media only screen and (min-width: 451px) {
   header section{
     display: flex;
   }
@@ -39,19 +39,14 @@
     background-color:	#99CC33;
   }
   .mainTop{ 
-    /* PENDING: POSITION THE WSUMMARY BOX IN THE MEDIUM AND LARGE VIEWPORTS
-    
-    the dashed line should cover wSummary but it doesnt. 
-    the position absolute on wSummary should position it on top of the hero image, but it is not working
-    */
     position: relative;
     border: dashed 1px red;
   }
 
   main section.wSummary{
     position: absolute;
-    top:20 px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
   }
 
 .footerContact {

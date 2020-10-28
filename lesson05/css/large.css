@@ -1,3 +1,9 @@
-@media only screen and (min-width: 65em) {
-
+@media only screen and (min-width: 700px) {
+  .mainBottom article{
+    display: inline;
+  }
+  
+  .mainBottom article img{
+    float: right;
+  }
 }

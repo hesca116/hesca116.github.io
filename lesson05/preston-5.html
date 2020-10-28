@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet"> <!--move to week 6-->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Raleway:wght@300;400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,8 +29,8 @@
     </section>
     <nav>
       <ul id="primaryNav" class="navigation hide">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Preston</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
@@ -38,24 +39,86 @@
     </nav>
   </header>
   <main>
+    <h2>Preston Idaho</h2>
     <section class="mainTop">
-      <h2>Preston Idaho</h2>
       <img class="heroImage" src="images/HeroImage.jpg" alt="Hero Image placeholder">
       <section class="wSummary">
         <h3>Weather Summary</h3>
-        <p class="articleText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, reiciendis possimus
-          unde consequatur nobis odio aliquid veritatis odit ipsam soluta. Ipsum perspiciatis voluptates aliquam rem
-          veniam, quod atque cupiditate fuga.</p>
+        <table class="sumTable">
+          <tr>
+            <td class="fcol">Currently: </td>
+            <td>Sunny</td>
+          </tr>
+          <tr>
+            <td class="fcol">High: </td>
+            <td>76°F</td>
+          </tr>
+          <tr>
+            <td class="fcol">Wind Chill: </td>
+            <td>25°F</td>
+          </tr>
+          <tr>
+            <td class="fcol">Humidity: </td>
+            <td>69%</td>
+          </tr>
+          <tr>
+            <td class="fcol">Wind Speed: </td>
+            <td>5 mph</td>
+          </tr>
+        </table>
       </section>
     </section>
     <section class="mainBottom">
-      <h2>Five Day Forecast</h2>
+      <section class="forecastBar">
+        <h2>Five Day Forecast</h2> 
+        <!--START move this to week 6-->
+        <div class="forecastItems">
+          <div class="card1">  
+            <p>Mon</p>
+            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30px">
+            <p>88&deg;</p>
+          </div>
+          <div class="card2"> 
+            <p>Tue</p>
+            <img src="images/wIcon1_storm.png" alt="sunny image" height="30px">
+            <p>76&deg;</p>
+          </div>
+          <div class="card2">  
+            <p>Wed</p>
+            <img src="images/wIcon3_cloudy.png" alt="sunny image" height="30px">
+            <p>88&deg;</p>
+          </div>
+          <div class="card2"> 
+            <p>Thu</p>
+            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30px">
+            <p>72&deg;</p>
+          </div>
+          <div class="card2">  
+            <p>Fri</p>
+            <img src="images/wIcon4_rainy.png" alt="sunny image" height="30px">
+            <p>84&deg;</p>
+          </div>
+          <div class="card2"> 
+            <p>Sat</p>
+            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30px">
+            <p>76&deg;</p>
+          </div>
+          <div class="card3"> 
+            <p>Sun</p>
+            <img src="images/wIcon3_cloudy.png" alt="sunny image" height="30px">
+            <p>77&deg;</p>
+          </div>
+        </div>
+        <!--END move this to week 6-->
+      </section>
+      <h3 class="art01">Article 01 Title</h3>
       <article>
-        <h3 class="art01">Article 01 Title</h3>
+        
+        <img src="../lesson03/images/Family-fun-Hike.jpg" alt="placeholder image">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
           dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum
           perspiciatis et quam excepturi!</p>
-        <img src="../lesson03/images/Family-fun-Hike.jpg" alt="placeholder image">
+        
       </article>
     </section>
   </main>
