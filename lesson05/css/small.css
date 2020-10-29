@@ -61,7 +61,7 @@ header nav{
 }
 
 .hamburguer{
-  margin: .2rem, 2%;
+  margin: .2rem 2%;
   padding-right: 20px;
   background-color: transparent;
   border: none;
@@ -120,6 +120,26 @@ h3 {
   font-size: 22px;
   font-family: 'Oswald', sans-serif;
 }
+
+/* START move this to week 6*/
+
+.message{
+  display: none;
+  background-color: #E6E6E6;
+  padding: 2em;
+  margin: 2em;
+  box-shadow: 5px 10px;
+}
+.message section {
+  display: flex;
+}
+.message section p {
+  margin: 2em 0 0 1.5em;
+  font-size: 1.7em;
+}
+
+
+/* END move this to week 6*/
 
 .main {
   max-width: 900px;
@@ -188,7 +208,6 @@ main section.wSummary h3{
 }
 
 /*****************END OF SUMMARY TABLE******************/
-/* START move this to week 6*/
 
 .mainBottom{
   display: flex;
@@ -228,7 +247,7 @@ main section.wSummary h3{
   display: none;
 }
 
-/* END move this to week 6*/
+
 
 p{
   font-family: 'Raleway', sans-serif;

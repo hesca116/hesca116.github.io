@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Images</title>
   <meta name="description" content="Main page for Hector Solano's completed assignments for WDD230">
-  <link rel="shortcut icon" href="../Genie Fav-icon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../GenieFav-icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
   <!--<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Raleway:wght@300;400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> These fonts are now loaded through webfontload.js-->
@@ -19,12 +20,12 @@
   <header>
     <button onclick="window.location.href='../index.html';">Back to Main Page</button>
     <section>
-      <img src="images/Website Logo - Color themed.png" alt="Weather Logo">
+      <img src="images/WLogo.png" alt="Weather Logo">
       <div>
         <h1>Outdoor Geenie </h1>
         <p class="accentText1">Find your next adventure!</p>
       </div>
-      <button class="hamburguer" onclick="toggleMenu()">&#9776</button>
+      <button class="hamburguer" onclick="toggleMenu()">&#9776;</button>
     </section>
     <nav>
       <ul id="primaryNav" class="navigation hide">
@@ -38,6 +39,13 @@
     </nav>
   </header>
   <main>
+    <div class="message">
+      <h1>Saturday = Preston Pancakes in the Park! </h1>
+      <section>
+        <img src="images/Pancakes.png" alt="pancakes" width="150">
+        <p> 9:00 a.m. <br> Saturday at the city park pavilion.</p>
+      </section>
+    </div>
     <h2>Preston Idaho</h2>
     <section class="mainTop">
       <picture class="responsive">
@@ -75,22 +83,61 @@
         </table>
       </section>
     </section>
-      <section class="mainBottom">
-        <h2>Five Day Forecast</h2>
-        <article>
-          <h3 class="art01">Article 01 Title</h3>
-          <figure class="artImage">
-            <img src="../lesson03/images/Family-fun-Hike.jpg" alt="placeholder image">
-          </figure>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
-            dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum
-            perspiciatis et quam excepturi! <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
-            dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum
-            perspiciatis et quam excepturi!
+    <section class="mainBottom">
+      <section class="forecastBar">
+        <h2>Five Day Forecast</h2> 
+        <!--START move this to week 6-->
+        <div class="forecastItems">
+          <div class="card1">  
+            <p>Mon</p>
+            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30">
+            <p>88&deg;</p>
+          </div>
+          <div class="card2"> 
+            <p>Tue</p>
+            <img src="images/wIcon1_storm.png" alt="sunny image" height="30">
+            <p>76&deg;</p>
+          </div>
+          <div class="card2">  
+            <p>Wed</p>
+            <img src="images/wIcon3_cloudy.png" alt="sunny image" height="30">
+            <p>88&deg;</p>
+          </div>
+          <div class="card2"> 
+            <p>Thu</p>
+            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30">
+            <p>72&deg;</p>
+          </div>
+          <div class="card2">  
+            <p>Fri</p>
+            <img src="images/wIcon4_rainy.png" alt="sunny image" height="30">
+            <p>84&deg;</p>
+          </div>
+          <div class="card2"> 
+            <p>Sat</p>
+            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30">
+            <p>76&deg;</p>
+          </div>
+          <div class="card3"> 
+            <p>Sun</p>
+            <img src="images/wIcon3_cloudy.png" alt="sunny image" height="30">
+            <p>77&deg;</p>
+          </div>
+        </div>
+        <!--END move this to week 6-->
+      </section>
+      <h3 class="art01">Article 01 Title</h3>
+      <article>
+        
+        <img src="../lesson03/images/Family-fun-Hike.jpg" alt="placeholder image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
+          dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum
+          perspiciatis et quam excepturi!<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis! Eveniet illum, iure architecto,
+          dolores ratione odit laborum facilis, eos tempore dignissimos repudiandae iusto! Exercitationem laborum
+          perspiciatis et quam excepturi!
 
-          </p>
+        </p>
         </article>
       </section>
   </main>
@@ -102,15 +149,15 @@
         <table class="contactTable">
           <tbody>
             <tr>
-              <td class="contactTable-row"><img src="images/contatct_MapPin.png" alt="Map Icon" height="20px"></td>
+              <td class="contactTable-row"><img src="images/contatct_MapPin.png" alt="Map Icon" height="20"></td>
               <td class="contactTable-row">placeholder address</td>
             </tr>
             <tr>
-              <td class="contactTable-row"><img src="images/contatct_phone.png" alt="Phone Icon" height="20px"></td>
+              <td class="contactTable-row"><img src="images/contatct_phone.png" alt="Phone Icon" height="20"></td>
               <td class="contactTable-row">111-222-3345</td>
             </tr>
             <tr>
-              <td class="contactTable-row"><img src="images/contatct_email.png" alt="eMail Icon" height="20px"></td>
+              <td class="contactTable-row"><img src="images/contatct_email.png" alt="eMail Icon" height="20"></td>
               <td class="contactTable-row">placeholder@holder.com</td>
             </tr>
           </tbody>
@@ -123,7 +170,7 @@
           <a href="#" class="fa fa-instagram"></a>
         </div>
       </div>
-      <img id="map" src="images/map.png" alt="Placeholder Map" height="100px">
+      <img id="map" src="images/map.png" alt="Placeholder Map" height="100">
 
     </section>
     <section class="footerBar">

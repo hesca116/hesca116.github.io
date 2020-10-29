@@ -62,7 +62,7 @@ header nav{
 }
 /***************************NAVIGATION MENU*********************************/
 .hamburguer{
-  margin: .2rem, 2%;
+  margin: .2rem 2%;
   padding-right: 20px;
   background-color: transparent;
   border: none;
@@ -121,6 +121,29 @@ h3 {
   font-size: 22px;
   font-family: 'Oswald', sans-serif;
 }
+
+/* START OF announcement*/
+
+.message{
+  display: none;
+  background-color: #E6E6E6;
+  padding: 2em;
+  margin: 2em;
+  box-shadow: 5px 10px;
+}
+.message section {
+  display: flex;
+}
+.message section p {
+  margin: 2em 0 0 1.5em;
+  font-size: 1.7em;
+}
+
+
+/* END of announcement*/
+
+
+
 /****************************BODY MAIN*********************************/
 .main {
   max-width: 900px;
@@ -189,15 +212,45 @@ main section.wSummary h3{
 /*****************END OF SUMMARY TABLE******************/
 
 
-.artImage{
-  width: 30%;
-  /*border: 1px dashed red;/*red border for optimization testing*/
-  float: right;
+
+.mainBottom{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  margin: 2rem;
 }
 
-article figure img {
-  width: 50%;
+.forecastBar{
+  text-align: center;
+  background-color: #58524E;
+  border-bottom: 1px solid gray;
 }
+
+.forecastBar h2{
+  color: white;
+}
+
+.mainBottom h3{
+    margin: 1em 0 0 2rem;
+}
+
+.mainBottom article{
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.mainBottom article img{
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 2rem;
+}
+
+.forecastItems{ 
+  display: none;
+}
+
 
 p{
   font-family: 'Raleway', sans-serif;
