@@ -62,15 +62,15 @@
         <table class="sumTable">
           <tr>
             <td class="fcol">Currently: </td>
-            <td>Sunny</td>
+            <td>Cloudy</td>
           </tr>
           <tr>
-            <td class="fcol">High: </td>
-            <td>76°F</td>
+            <td class="fcol">Temperature: </td>
+            <td><span id="temp">47</span>°F</td>
           </tr>
           <tr>
             <td class="fcol">Wind Chill: </td>
-            <td>25°F</td>
+            <td><span id="calculatedWChill"></span>°F</td>
           </tr>
           <tr>
             <td class="fcol">Humidity: </td>
@@ -78,7 +78,7 @@
           </tr>
           <tr>
             <td class="fcol">Wind Speed: </td>
-            <td>5 mph</td>
+            <td><span id="wSpeed">5.2</span>mph</td>
           </tr>
         </table>
       </section>
@@ -184,6 +184,7 @@
   <script src="js/respMenu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webFontLoad.js"></script>
+  <script src="js/windchill.js"></script>
 </body>
 
 </html>
