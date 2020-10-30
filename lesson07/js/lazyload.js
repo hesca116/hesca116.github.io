@@ -14,18 +14,19 @@ const loadImages = (image) => {
   image.onLoad = () => {image.removeAttribute('data-src');};
 }
 
-//this part checks if the IntersectionObserver supported? 
 if('IntersectionObserver' in window) {
-  const imgObserver = new IntersectionObserver((items, observer) =>{
-    items.forEach((item) =>{
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if(item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
     });
-  }, imgOptions);
-//forEach loop cicles through the images to load them when the imageObserver catches them
-imagesToLoad.forEach((img) => {
-  imgObserver.observe(img);
   });
-}
-else {
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
   imagesToLoad.forEach((img) => {
     loadImages(img);
   });
