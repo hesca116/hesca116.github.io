@@ -11,3 +11,12 @@ h1 {
   margin: 1.4rem 0 0 0;
   font-family: 'Oswald', Arial, sans-serif;
 }
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter .5s;
+}
