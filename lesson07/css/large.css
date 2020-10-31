@@ -1,0 +1,18 @@
+@media only screen and (min-width: 700px) {
+  
+  main .gallery{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main h2.smallView,
+  main h2.midView{
+  display:none;
+  }
+  main h2.largeView{
+    display:block;
+  }
+  img:hover{
+    box-shadow: 10px 5px 5px black;
+  }
+
+}

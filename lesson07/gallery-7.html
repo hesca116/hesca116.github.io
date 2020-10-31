@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LazyLoader Gallery</title>
+  <meta name="description" content="Main page for Hector Solano's completed assignments for WDD230">
+  <link rel="shortcut icon" href="../GenieFav-icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Raleway:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> These fonts are now loaded through webfontload.js-->
+</head>
+
+<body>
+  <header>
+    <button onclick="window.location.href='../index.html';">Back to Main Page</button>
+    <section>
+      <img src="images/WLogo.png" alt="Weather Logo">
+      <div>
+        <h1>Outdoor Geenie </h1>
+        <p class="accentText1">Find your next adventure!</p>
+      </div>
+      <button class="hamburguer" onclick="toggleMenu()">&#9776;</button>
+    </section>
+    <nav>
+      <ul id="primaryNav" class="navigation hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Weather Images</h1>
+    <h2 class="smallView">Small View</h2>
+    <h2 class="midView">Medium View</h2>
+    <h2 class="largeView">Large View</h2>
+    <section class="gallery">
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image01foggy.jpg" alt="image1">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image02cloudyRiver.jpg" alt="image2">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image03tornado.jpg" alt="image3">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image04sunny.jpg" alt="image4">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image05clear.jpg" alt="image5">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image06rainy.jpg" alt="image6">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image07autum.jpg" alt="image7">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image08snowy.jpg" alt="image8">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image09winter.jpg" alt="image9">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image10fogBow.jpg" alt="image10">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image11sunny.jpg" alt="image11">
+      </picture>
+      <picture>
+        <img src="images/placeholderImage300x400.jpg" data-src="images/image12lightning.jpg" alt="image12">
+      </picture>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footerContact">
+      <div class="contactBox">
+        <h3>Contact information</h3>
+        <table class="contactTable">
+          <tbody>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_MapPin.png" alt="Map Icon" height="20"></td>
+              <td class="contactTable-row">placeholder address</td>
+            </tr>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_phone.png" alt="Phone Icon" height="20"></td>
+              <td class="contactTable-row">111-222-3345</td>
+            </tr>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_email.png" alt="eMail Icon" height="20"></td>
+              <td class="contactTable-row">placeholder@holder.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="smIcons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+      <img id="map" src="images/map.png" alt="Placeholder Map" height="100">
+    </section>
+    <section class="footerBar">
+      &copy; <span id="currentYear"></span> | Hector Solano Cambonero | Costa Rica |
+      <br>
+      <b class="coloredFooter">Last Updated: <span id="lastModified"></span></b>
+    </section>
+  </footer>
+  <script src="/lesson06/js/footerDates.js"></script>
+  <script src="/lesson06/js/respMenu.js"></script>
+  <script src="js/lazyload.js"></script>
+</body>
+
+</html>
