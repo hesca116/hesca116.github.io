@@ -13,9 +13,9 @@ body {
   font-family: Oswald, sans-serif;
 }
 
-/*picture img[data-src] {
+/*picture img[data-src] { should enable this after troubleshooting js with br. Gardner
   filter: blur(0.2em);
-}*/
+} */ 
 
 picture img {
   filter: blur(0em);
