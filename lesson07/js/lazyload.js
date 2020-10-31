@@ -1,9 +1,10 @@
 //This query gets all the images that contain a data-src attribute
 const imagesToLoad = document.querySelectorAll("img[data-src]");
+//console.log(imagesToLoad);
 
 //IntersectionalObserver API> Optional parameters
 const imgOptions = {
-  threshold: 0.5,
+  threshold: 0.2,
   rootMargin: "0px 0px 300px 0px"
 };
 
@@ -15,7 +16,7 @@ if('IntersectionObserver' in window) {
         observer.unobserve(item.target);
       }
     });
-  });
+  }, imgOptions);
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });
