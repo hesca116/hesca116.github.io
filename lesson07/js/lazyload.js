@@ -4,7 +4,7 @@ const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 //IntersectionalObserver API> Optional parameters
 const imgOptions = {
-  threshold: 0.2,
+  threshold: 0.8,
   rootMargin: "0px 0px 300px 0px"
 };
 
@@ -32,7 +32,10 @@ if('IntersectionObserver' in window) {
 
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
-  image.onLoad = () => {image.removeAttribute('data-src');};
+  image.removeAttribute('data-src');
+  /*image.onLoad = () => {//image has not loaded to this point, maybe eliminate this event listener and use remove attribue at once
+    image.removeAttribute('data-src');
+  };*/
 }
 
 
