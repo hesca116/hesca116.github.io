@@ -1,3 +1,6 @@
+button {
+  margin: 3em;
+}
 /******************general table styling*******************/
 body table {
   border-collapse: collapse;
