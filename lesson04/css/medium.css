@@ -58,10 +58,12 @@
     font-size: 1.5em;
     padding-bottom: 1rem;
   }
-  .smIcons a{
+  /*start - move to week 8*/
+  .smIcons a{ 
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 0 10px;
   }
+  /*end - move to week 8*/
 
 }

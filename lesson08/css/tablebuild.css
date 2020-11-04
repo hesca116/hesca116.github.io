@@ -1,0 +1,65 @@
+/******************general table styling*******************/
+body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0px auto;
+  font-family: 'Ubuntu', sans-serif;
+  border-color: grey;
+}
+
+/******************table body and footer*******************/
+body table tr td {  /*general styling for all the cells*/
+  border-style: solid;
+  border-width: 1px;
+  border-color: #afafaf;
+  font-size: 14px;
+  padding: 10px 5px;
+  text-align: center;
+  background-color: #e7ffed;
+}
+
+/************** table header *************/
+body table thead tr th{ 
+  background-color: #7fb9c2;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  padding: 10px 5px;
+}
+
+
+/************** table highlight *************/
+body table thead .highlight { /*for the first row*/
+  background-color: #628ca6;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top
+}
+
+body table tbody .highlight { /*for the rest of the table*/
+  background-color: #628ca6;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: top
+}
+
+/************** table format for odd rows *************/
+body table tbody tr:nth-child(odd) td{
+  background-color: #e7f0ed;
+}
+
+
+/************table footer row*************/
+body table tfoot tr td {
+  background-color: #7fb9c2;
+  border-color: inherit;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top
+}
