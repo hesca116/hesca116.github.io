@@ -7,7 +7,9 @@ body table {
   border-spacing: 0;
   margin: 0px auto;
   font-family: 'Ubuntu', sans-serif;
-  border-color: grey;
+  border-color: rgb(170, 168, 168);
+  box-shadow: 10px 10px 15px #628ca6;
+  width: 250px;
 }
 
 /******************table body and footer*******************/
