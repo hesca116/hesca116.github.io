@@ -40,6 +40,7 @@ header button{
 header section{
   display: grid;
   grid-template-columns: 30% 60% 10%;
+  color: black;
 }
 
 header img {
@@ -63,7 +64,7 @@ body {
 header,
 footer {
   background-color: #99CC33;
-  color: white;
+  color: black;
 }
 
 header nav{
@@ -100,7 +101,7 @@ nav ul li a{
   padding: .8rem 2%; /*make each item bigger for easy finger tapping*/
   text-decoration: none;
   font-size: 1.4em;
-  color:#58524E;
+  color: black;
   border-top: 1px solid rgba(0,0,0,0.3);
 }
 
@@ -191,6 +192,7 @@ footer {
   border-spacing: 0;
   margin: 0px auto;
   font-family: 'Raleway', sans-serif;
+  color: black;
 }
 
 .contactTable td {
