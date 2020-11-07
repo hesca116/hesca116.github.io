@@ -39,35 +39,53 @@
     </nav>
   </header>
   <main>
-    <h1>Course Proposal Application</h1>
+    <h1>Report a Storm</h1>
         <form method="get" action="thanks.html">
         
           <fieldset>
             <legend>Contact Information</legend>
-              <label class="top">Full name* <input type="text" name="fname" required></label> <!--Pending: add validation only accepts alpha characters with a minimum of five characters using a regular expression pattern-->
-              <label class="top">Email* <input type="email" name="email" placeholder="YourName@gmail.com" ></label>
-              <label class="top">Phone <input type="tel" name="phone" required></label>
-              <label class="top">Zip Code <input type="number" name="zipCode" required></label>
+              <div class="form-box">
+                <label class="top" for="name">Full name* </label>
+                <input type="text" id="name" name="fname" required minlength="5"> <!--Pending: add validation only accepts alpha characters with a minimum of five characters using a regular expression pattern-->
+              </div>
+              <div class="form-box">
+                <label class="top" for="email" >Email*</label>
+                <input type="email" id="email" name="email" placeholder="YourName@gmail.com" >
+              </div>
+              <div class="form-box">
+                <label class="top" for="phone" >Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+
+              <div class="form-box">
+                <label class="top" for="zcode">Zip Code</label>
+                <input type="number" id="zcode" name="zipCode" required>
+              </div>
           </fieldset>
 
           <fieldset>
             <legend>Storm Report</legend>
-            <label class="top">Storm Date <input type="date" name="completeDate"></label>
-            <label class="top">Storm Type:
-              <input list="stormType" name="stormType-choice" />
+            <div class="form-box">
+              <label class="top" for="sDate">Storm Date</label>
+              <input type="date" id="sDate" name="stormDate">
+            </div>
+            
+            <div class="form-box">
+              <label class="top" for="sType">Storm Type:</label>
+              <input list="stormType" id="sType" name="stormType-choice" />
                 <datalist id="stormType">
                   <option value="Flash Flood">
                   <option value="Hurricane">
                   <option value="Thunderstorm">
                   <option value="Tornado">
                 </datalist>            
-            </label>
-
-            <label class="flexly">Rating: &nbsp;&nbsp;&nbsp;
-              <input type="range" value="5" min="1" max="10" step="1" list="tickmarks" 
+            </div>
+            <div class="form-box">
+              <label class="slider" for="rating">Drag to Record the Rating: &nbsp;<span id="ratingvalue">5</span> </label>
+              <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" 
               oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-              <span id="ratingvalue">5</span>
-            </label>  
+              <span>&nbsp;&nbsp;&nbsp;</span>
+            </div>  
               <datalist id="tickmarks"> <!--datalist for rating slider-->
                   <option value="0">
                   <option value="1">
@@ -82,13 +100,15 @@
                   <option value="10">
                 </datalist>
             
-              <label class="top">Storm Region
-                  <select name="stormRegion"> <option value="">Select Region</option> <!--add the #9662; entity after "please Select" to add an arrow inside the text-->
-                  <option value="preston"> Preston</option>
-                  <option value="sodaSprings"> Soda Springs</option>
-                  <option value="fishHaven">Fish Haven</option>
-                  </select>
-              </label>
+            <div class="form-box">
+              <label class="top" for="sRegion">Storm Region</label>
+              <select name="stormRegion" id="sRegion"> 
+                <option value="">Select Region</option> <!--add the #9662; entity after "please Select" to add an arrow inside the text-->
+                <option value="preston"> Preston</option>
+                <option value="sodaSprings"> Soda Springs</option>
+                <option value="fishHaven">Fish Haven</option>
+              </select>
+            </div>
               
           </fieldset>
           <fieldset>
@@ -98,10 +118,13 @@
               <label class="sbs"><input type="radio" name="dangerLevel" value="no"> No </label>
             </fieldset>
 
-            <fieldset>Additional Information
-              <label class="top">Type Your Comments Here <input type="textArea" name="comments"
-                rows="5" cols="33">                
-              </label>
+            <fieldset>
+              <legend> Additional Information</legend>
+              <div class="form-box">
+                <label for="story">Comments</label>
+                <textarea id="story" name="story" rows="5" cols="33">                
+                </textarea>
+              </div>
             </fieldset>
 
 

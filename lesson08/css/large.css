@@ -1,3 +1,28 @@
 @media only screen and (min-width: 700px) {
+  /*--------------------FORM--------------------*/
+  form label.sbs{
+      padding: .4rem 0;
+  }
 
+  .form-box {
+    flex-direction:row;    
+  }
+
+  .form-box label{
+    flex-basis: 9rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .form-box input,
+  .form-box select,
+  .form-box textarea{
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+ form input.submitBtn{
+    margin-left: 9rem;
+  }
 }
