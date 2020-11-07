@@ -32,7 +32,7 @@
   nav ul li a{
     border:none;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
-    color: white;
+    color: black; 
     padding: .6rem 1%; /*make each item bigger for easy finger tapping*/
   }
   nav{
@@ -105,7 +105,7 @@
   }
   .smIcons a{
     text-decoration: none;
-    color: white;
+    color: black; 
     padding: 0 10px;
   }
 
