@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storm Center</title>
+  <meta name="description" content="Main page for Hector Solano's completed assignments for WDD230">
+  <link rel="shortcut icon" href="../GenieFav-icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Raleway:wght@300;400&display=swap"
+    rel="stylesheet"> These fonts are now loaded through webfontload.js-->-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Load the social media fonts for the footer-->
+</head>
+
+<body>
+  <header>
+    <button onclick="window.location.href='../index.html';">Back to Main Page</button>
+    <section>
+      <img src="images/WLogo.png" alt="Weather Logo">
+      <div>
+        <h1>Outdoor Geenie </h1>
+        <p class="accentText1">Find your next adventure!</p>
+      </div>
+      <button class="hamburguer" onclick="toggleMenu()">&#9776;</button>
+    </section>
+    <nav>
+      <ul id="primaryNav" class="navigation hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="thanks">
+    <h1>Storm Center</h1>
+        <p>Thank you for your report. <br>
+        Please take the necessary precautions to remain safe. <br>
+      For more information about security measures <a href="#"> click here.</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <!--<section class="footerContact">
+      <div class="contactBox">
+        <h3>Contact information</h3>
+        <table class="contactTable">
+          <tbody>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_MapPin.png" alt="Map Icon" height="20"></td>
+              <td class="contactTable-row">placeholder address</td>
+            </tr>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_phone.png" alt="Phone Icon" height="20"></td>
+              <td class="contactTable-row">111-222-3345</td>
+            </tr>
+            <tr>
+              <td class="contactTable-row"><img src="images/contatct_email.png" alt="eMail Icon" height="20"></td>
+              <td class="contactTable-row">placeholder@holder.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="smIcons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+      <img id="map" src="images/map.png" alt="Placeholder Map" height="100">
+    </section>
+  -->
+    <section class="footerBar">
+      &copy; <span id="currentYear"></span> | Hector Solano Cambonero | Costa Rica |
+      <br>
+      <b class="coloredFooter">Last Updated: <span id="lastModified"></span></b>
+    </section>
+  </footer>
+
+  <script src="js/footerDates.js"></script>
+  <script src="js/respMenu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webFontLoad.js"></script>
+</body>
+
+</html>

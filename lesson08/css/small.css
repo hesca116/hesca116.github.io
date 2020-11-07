@@ -1,0 +1,202 @@
+/*  DESIGN SPECS 
+Color Palette https://coolors.co/2d4b99-e7ecef-a3cef1-519872-fc9f5b
+*/
+
+/****************************HTML GENERAL*********************************/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/****************************BODY*********************************/
+body {
+  font-size: 12px;
+  line-height: 1.4;
+}
+/****************************HEADER*********************************/
+header{
+  padding: 1.5rem;
+}
+
+header button{
+  display:block;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+header section{
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  color: black;
+}
+
+header img {
+  padding: 1em;
+  height: 75px;
+}
+
+header p{
+  padding:0;
+  margin:0;
+  text-align: left;
+}
+
+header,
+body {
+  margin: 1.25rem auto;
+  max-width: 960px;
+  font-family: Oswald, sans-serif;
+}
+
+header,
+footer {
+  background-color: #99CC33;
+  color: black;
+}
+
+header nav{
+  background-color: 	lightgray;
+  font-family: Oswald, sans-serif;
+}
+/***************************NAVIGATION MENU*********************************/
+.hamburguer{
+  margin: .2rem 2%;
+  padding-right: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 2.1rem;
+  color:#58524E;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.3);
+  overflow: hidden;
+  font-family: 'oswald', sans-serif;
+}
+
+nav ul.hide{
+  display:none;
+}
+
+
+nav ul li a{
+  display: block;
+  text-align: center; 
+  padding: .8rem 2%; /*make each item bigger for easy finger tapping*/
+  text-decoration: none;
+  font-size: 1.4em;
+  color: black;
+  border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a{
+  background-color: #F16722;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color:rgba(0,0,0,0.3);
+  color: white;
+}
+/****************************BODY*********************************/
+h1 {
+  text-align: left;
+  font-size: 2.1rem;
+  margin: 1.4rem 0 0 0;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+
+h2 {
+  margin: 0.5em;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+/****************************BODY MAIN*********************************/
+/*-------------- THANKS.HTML--------------*/
+main section.thanks{
+  margin: 0 0 0 2rem;
+}
+
+
+
+/****************************FOOTER*********************************/
+footer {
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 0.7rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+#map {
+  padding: 20px;
+}
+
+/*START OF FOOTER CONTACT TABLE*/
+.contactTable {
+  text-align: left; 
+  float: left;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0px auto;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+.contactTable td {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.contactTable th {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.contactTable-row {
+  border-color: transparent;
+  text-align: left;
+  vertical-align: top
+}
+
+/*END OF FOOTER CONTACT TABLE*/
+
+.smIcons{
+  display:none;
+}
+
+.footerBar{
+  text-align: center; 
+}
+
+.coloredFooter {
+  font-size: 0.6rem;
+  color: #254083;
+}
