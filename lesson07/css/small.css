@@ -153,7 +153,7 @@ main h2.largeView{
 }
 
 main .gallery{
-  //background-color: crimson;
+  /*background-color: crimson; color for testing*/ 
   display: grid;
   row-gap: 20px;
   column-gap: 20px;
