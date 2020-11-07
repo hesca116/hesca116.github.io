@@ -46,7 +46,7 @@
             <legend>Contact Information</legend>
               <div class="form-box">
                 <label class="top" for="name">Full name* </label>
-                <input type="text" id="name" name="fname" required minlength="5"> <!--Pending: add validation only accepts alpha characters with a minimum of five characters using a regular expression pattern-->
+                <input type="text" id="name" name="fname" required pattern="[A-Za-z]{5,}"> <!--Pending: add validation only accepts alpha characters with a minimum of five characters using a regular expression pattern-->
               </div>
               <div class="form-box">
                 <label class="top" for="email" >Email*</label>
