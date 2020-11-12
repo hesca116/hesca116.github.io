@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -7,25 +7,34 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
 
-    const prophets = jsonObject['prophets'];
+    const townInfo = jsonObject['townInfo'];
 
-    for (let i = 0; i < prophets.length; i++ ) {
+    for (let i = 0; i < townInfo.length; i++ ) {
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
-      let bdate = document.createElement('p');
-      let bplace = document.createElement('p');
+      let h3 = document.createElement('h3');
+      let motto = document.createElement('p');
+      let foundYear = document.createElement('p');
+      let population = document.createElement('p');
+      let annualRain = document.createElement('p');
       let image = document.createElement('img');
 
-      h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-      bdate.textContent = 'Date of Birth: ' + prophets[i].birthdate;
-      bplace.textContent = 'Place of Birth: ' + prophets[i].birthplace;
-      image.setAttribute('src', prophets[i].imageurl);
-      image.setAttribute('alt', h2.textContent + '-' + prophets[i].order);
-      image.setAttribute('height', '205');
+      h2.textContent = townInfo[i].name;
+      motto.textContent = townInfo[i].motto;
+      foundYear.textContent = 'Year Founded: ' + townInfo[i].yearFounded;
+      population.textContent = 'Population: ' + townInfo[i].currentPopulation;
+      annualRain.textContent = 'Average Rain Fall: ' + townInfo[i].averageRainfall;
+
+      image.setAttribute('src', townInfo[i].photo);
+      image.setAttribute('alt', h2.textContent + ' photo');
+      /*image.setAttribute('height', '205');*/ /*Example of how to modify image attributes */
 
       card.appendChild(h2);
-      card.appendChild(bdate);
-      card.appendChild(bplace);
+      card.appendChild(h3);
+      card.appendChild(motto);
+      card.appendChild(foundYear);
+      card.appendChild(population);
+      card.appendChild(annualRain);
       card.appendChild(image);
 
       document.querySelector('div.cards').appendChild(card);
