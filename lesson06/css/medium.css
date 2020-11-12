@@ -39,8 +39,7 @@
     background-color:	#99CC33;
   }
   .mainTop{ 
-    position: relative;
-    border: dashed 1px red;
+    position: relative;    
   }
 
   main section.wSummary{

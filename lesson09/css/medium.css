@@ -1,0 +1,63 @@
+@media only screen and (min-width: 600px) {
+  header section{
+    display: flex;
+  }
+
+  header img {
+    padding: 1em;
+    height: 100px;
+  }
+  
+  header h1{
+    font-size: 4em;
+    text-align: left;
+  }
+
+  header p{
+    font-size: 1.5em;
+  }
+  .hamburguer {
+    display: none;
+  }
+
+  nav ul,
+  nav ul.hide {
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav ul li a{
+    border:none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    color: black;
+    padding: .6rem 1%; /*make each item bigger for easy finger tapping*/
+  }
+  nav{
+    background-color:	#99CC33;
+  }
+
+
+  /**********************FOOTER SECTION*****************************/
+
+  .footerContact {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .smIcons{
+    display:block;
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+  }
+  .smIcons a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+  }
+
+}

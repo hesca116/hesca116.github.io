@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LazyLoader Gallery</title>
+  <title>Storm Center</title>
   <meta name="description" content="Main page for Hector Solano's completed assignments for WDD230">
   <link rel="shortcut icon" href="../GenieFav-icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/normalize.css">
@@ -29,74 +29,21 @@
     </section>
     <nav>
       <ul id="primaryNav" class="navigation hide">
-        <li><a href="../lesson09/index.html">Home</a></li>
+        <li class="active"><a href="../lesson09/index.html">Home</a></li>
         <li><a href="../lesson06/preston-6.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li><a href="../lesson08/stormcenter.html">Storm Center</a></li>
-        <li class="active"><a href="../lesson07/gallery-7.html">Gallery</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="../lesson07/gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Weather Images</h1>
-    <h2 class="smallView">Small View</h2>
-    <h2 class="midView">Medium View</h2>
-    <h2 class="largeView">Large View</h2>
-    <section class="gallery">
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image01foggy.jpg" alt="image1">
-        <p>A foggy afternoon</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image02cloudyRiver.jpg" alt="image2">
-        <p>Clouds clearing after the rain</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image03tornado.jpg" alt="image3">
-        <p>A regular windy day in Alabama</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image04sunny.jpg" alt="image4">
-        <p>Biking weather!</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image05clear.jpg" alt="image5">
-        <p>It rained a little yesterday!</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image06rainy.jpg" alt="image6">
-        <p>Stroll in the morning, London UK</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image07autum.jpg" alt="image7">
-        <p>Cloudy autum morning</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image08snowy.jpg" alt="image8">
-        <p>It snowed yesterday</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image09winter.jpg" alt="image9">
-        <p>Clouds clearing for tomorrow</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image10fogBow.jpg" alt="image10">
-        <p>A fog bow formation</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image11sunny.jpg" alt="image11">
-        <p>Balooning weather!</p>
-      </picture>
-      <picture>
-        <img src="images/placeholderImage300x400.jpg" data-src="images/image12lightning.jpg" alt="image12">
-        <p>A thunderstorm comming</p>
-      </picture>
-    </section>
+    
   </main>
 
   <footer>
-    <section class="footerContact">
+    <!--<section class="footerContact">
       <div class="contactBox">
         <h3>Contact information</h3>
         <table class="contactTable">
@@ -125,15 +72,19 @@
       </div>
       <img id="map" src="images/map.png" alt="Placeholder Map" height="100">
     </section>
+  -->
     <section class="footerBar">
       &copy; <span id="currentYear"></span> | Hector Solano Cambonero | Costa Rica |
       <br>
       <b class="coloredFooter">Last Updated: <span id="lastModified"></span></b>
     </section>
   </footer>
-  <script src="/lesson06/js/footerDates.js"></script>
-  <script src="/lesson06/js/respMenu.js"></script>
-  <script src="js/lazyload.js"></script>
+
+  <script src="js/footerDates.js"></script>
+  <script src="js/respMenu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webFontLoad.js"></script>
+  <script src="js/formUpdater.js"></script>
 </body>
 
 </html>
