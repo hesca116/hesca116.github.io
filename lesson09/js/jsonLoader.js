@@ -6,10 +6,11 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const town = jsonObject['towns'];
 
-    const townInfo = jsonObject['townInfo'];
-
-    for (let i = 0; i < townInfo.length; i++ ) {
+    for (let i = 0; i < town.length; i++ ) {
+      /*Pending: add a conditional statement to only select the 3 required towns*/
+      if(town[i].name == 'Preston' || town[i].name == 'Soda Springs'|| town[i].name == 'Fish Haven'){
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
       let h3 = document.createElement('h3');
@@ -19,13 +20,13 @@ fetch(requestURL)
       let annualRain = document.createElement('p');
       let image = document.createElement('img');
 
-      h2.textContent = townInfo[i].name;
-      motto.textContent = townInfo[i].motto;
-      foundYear.textContent = 'Year Founded: ' + townInfo[i].yearFounded;
-      population.textContent = 'Population: ' + townInfo[i].currentPopulation;
-      annualRain.textContent = 'Average Rain Fall: ' + townInfo[i].averageRainfall;
+      h2.textContent = town[i].name;
+      motto.textContent = town[i].motto;
+      foundYear.textContent = 'Year Founded: ' + town[i].yearFounded;
+      population.textContent = 'Population: ' + town[i].currentPopulation;
+      annualRain.textContent = 'Average Rain Fall: ' + town[i].averageRainfall;
 
-      image.setAttribute('src', townInfo[i].photo);
+      image.setAttribute('src', town[i].photo);
       image.setAttribute('alt', h2.textContent + ' photo');
       /*image.setAttribute('height', '205');*/ /*Example of how to modify image attributes */
 
@@ -38,6 +39,8 @@ fetch(requestURL)
       card.appendChild(image);
 
       document.querySelector('div.cards').appendChild(card);
+      }
+  
     }
 
   });
