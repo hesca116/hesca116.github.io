@@ -160,6 +160,19 @@ main section{
   align-items: center;
 }
 
+.cards img{
+  width: 100%;
+}
+
+.cards section{ 
+  margin: 1rem;
+  border: 1px solid lightgray;
+  overflow: hidden;
+  border-radius: .7em;
+  box-shadow: .2em .2em .2em;
+  max-width: 400px;
+}
+
 main article{
   border: 1px solid lightgray;
   margin: 1rem;
@@ -190,21 +203,6 @@ main article img{
 main article .adventure p{
   margin: 1rem;
 }
-
-.cards img{
-  width: 100%;
-}
-
-.cards section{ 
-  margin: 1rem;
-  border: 1px solid lightgray;
-  overflow: hidden;
-  border-radius: .7em;
-  box-shadow: .2em .2em .2em;
-  max-width: 400px;
-}
-
-
 
 /****************************FOOTER*********************************/
 footer {
