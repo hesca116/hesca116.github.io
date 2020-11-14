@@ -38,8 +38,98 @@
   nav{
     background-color:	#99CC33;
   }
+  /**********************MAIN SECTION*****************************/
+  
+  .heroCaption {
+    font-size: 24px;
+    right: 2.4rem;
+    top: 5rem;
+  }
 
+  .cards section{ 
+    display: grid;
+    grid-template-columns: 45% 55%;
+    max-width: 700px;
+    grid-column-gap: 40px;
+    text-align: right;
+  }
 
+  .cards section:nth-of-type(2){
+    grid-template-columns: 55% 45%;
+    text-align: left;
+  }
+
+  .cards section h2{
+    margin-top: 1.4rem;
+  }
+
+  .cards section h2,
+  .cards section h3,
+  .cards section h4,
+  .cards section p{
+    grid-column: 1/2;
+  }
+
+  .cards section p{
+    margin: 1rem 0 0 0;
+  }
+
+  .cards section img{
+    grid-column: 2/3;
+    grid-row: 1/7;
+  }
+  /*---------------- SECOND CARD ----------------*/
+  .cards section:nth-of-type(2) img{
+    grid-column: 1/2;    
+  }
+
+  .cards section:nth-of-type(2) h2,
+  .cards section:nth-of-type(2) h3,
+  .cards section:nth-of-type(2) h4,
+  .cards section:nth-of-type(2) p {
+    grid-column: 2/3;
+  }
+
+  /*---------------- ARTICLE ----------------*/
+
+  main section:nth-of-type(2){ /*width of article box*/
+    margin: 1rem;
+  }
+  
+  main article {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  main article .adventure,
+  main article .adventure h1,
+  main article .adventure h3{
+    text-align: left;
+    margin-left: 1rem;
+    max-width: 100%;
+  }
+
+  main article .adventure{
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  
+  main article img{
+    margin: 1rem 0 2rem 1rem;
+    width: 85%;
+    grid-column: 1/2;
+  }
+
+  main article h1,
+  main article h3{
+    grid-column: 1/2;    
+  }
+
+  main article .adventure p{
+    font-size: small;
+    text-align: justify;
+    margin: 1rem 2rem 1rem 0;
+  }
   /**********************FOOTER SECTION*****************************/
 
   .footerContact {
