@@ -70,7 +70,7 @@
           </tr>
           <tr>
             <td class="fcol">Wind Chill: </td>
-            <td><span id="calculatedWChill"></span> °F</td>
+            <td><span id="calculatedWChill"></span></td>
           </tr>
           <tr>
             <td class="fcol">Humidity: </td>
@@ -89,39 +89,29 @@
         <!--START move this to week 6-->
         <div class="forecastItems">
           <div class="card1">  
-            <p>Mon</p>
-            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30">
-            <p>88&deg;</p>
+            <p id="day1"></p>
+            <img id="forecastImg1" src="" alt="" >
+            <p id="forecastTemp1">&deg;</p>
           </div>
           <div class="card2"> 
-            <p>Tue</p>
-            <img src="images/wIcon1_storm.png" alt="sunny image" height="30">
-            <p>76&deg;</p>
+            <p id="day2"></p>
+            <img id="forecastImg2" src="" alt="">
+            <p id="forecastTemp2">&deg;</p>
           </div>
           <div class="card2">  
-            <p>Wed</p>
-            <img src="images/wIcon3_cloudy.png" alt="sunny image" height="30">
-            <p>88&deg;</p>
+            <p id="day3"></p>
+            <img id="forecastImg3" src="" alt="">
+            <p id="forecastTemp3">&deg;</p>
           </div>
           <div class="card2"> 
-            <p>Thu</p>
-            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30">
-            <p>72&deg;</p>
+            <p id="day4"></p>
+            <img id="forecastImg4" src="" alt="">
+            <p id="forecastTemp4">&deg;</p>
           </div>
-          <div class="card2">  
-            <p>Fri</p>
-            <img src="images/wIcon4_rainy.png" alt="sunny image" height="30">
-            <p>84&deg;</p>
-          </div>
-          <div class="card2"> 
-            <p>Sat</p>
-            <img src="images/wIcon2_sunny.png" alt="sunny image" height="30">
-            <p>76&deg;</p>
-          </div>
-          <div class="card3"> 
-            <p>Sun</p>
-            <img src="images/wIcon3_cloudy.png" alt="sunny image" height="30">
-            <p>77&deg;</p>
+          <div class="card3">  
+            <p id="day5"></p>
+            <img id="forecastImg5" src="" alt="">
+            <p id="forecastTemp5">&deg;</p>
           </div>
         </div>
         <!--END move this to week 6-->
@@ -174,6 +164,7 @@
 
     </section>
     <section class="footerBar">
+      <p>Powered by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
       &copy; <span id="currentYear"></span> | Hector Solano Cambonero | Costa Rica |
       <br>
       <b class="coloredFooter">Last Updated: <span id="lastModified"></span></b>
@@ -185,6 +176,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webFontLoad.js"></script>
   <script src="js/weatherapi2.js"></script>
+  <script src="js/nextDays.js"></script>
   <script src="js/forecast.js"></script>
 </body>
 
