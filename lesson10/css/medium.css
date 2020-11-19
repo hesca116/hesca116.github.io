@@ -1,0 +1,110 @@
+@media only screen and (min-width: 451px) {
+  header section{
+    display: flex;
+  }
+
+  header img {
+    padding: 1em;
+    height: 100px;
+  }
+  
+  header h1{
+    font-size: 4em;
+    text-align: left;
+  }
+
+  header p{
+    font-size: 1.5em;
+  }
+  .hamburguer {
+    display: none;
+  }
+
+  nav ul,
+  nav ul.hide {
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav ul li a{
+    border:none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    color: black;
+    padding: .6rem 1%; /*make each item bigger for easy finger tapping*/
+  }
+  nav{
+    background-color:	#99CC33;
+  }
+  .mainTop{ 
+    position: relative;    
+  }
+
+  main section.wSummary{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  /* START move this to week 6*/
+
+  .forecastItems{ 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .forecastItems div { 
+    text-align: center;
+    background-color: rgba(253, 253, 253, 0.877);
+    width: 50px;
+    margin: 0;
+    padding: .5rem;
+    padding-bottom: 0;
+    margin-bottom: 2em;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+
+  .forecastItems div:nth-of-type(7){
+    border-right: 1px solid gray;
+  } 
+
+  .forecastItems div p:nth-of-type(1){
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 0;
+  }
+
+  .forecastItems div img {
+    margin: 20px 0 0 0;
+  }
+
+  /*END move this to week 6*/
+
+  /**********************FOOTER SECTION*****************************/
+
+.footerContact {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .smIcons{
+    display:block;
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+  }
+  .smIcons a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+  }
+
+}
