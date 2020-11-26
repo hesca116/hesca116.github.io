@@ -1,0 +1,35 @@
+body{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  overflow: auto;
+  resize: horizontal;
+  justify-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.small {
+  max-width: 250px;
+}
+
+.medium {
+  max-width: 350px;
+}
+
+.large {
+  max-width: 450px;
+}
+
+@media (min-width: 1600px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+  }
+}
