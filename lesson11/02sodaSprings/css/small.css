@@ -123,6 +123,10 @@ h3 {
   font-family: 'Oswald', sans-serif;
 }
 
+.eventCards section p{
+  margin-left: 3em;
+}
+
 /* START OF announcement*/
 
 .message{
