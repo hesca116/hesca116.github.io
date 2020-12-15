@@ -1,4 +1,3 @@
-
 /*
 fetch("data/rentals.json")
 .then(response => {
@@ -12,21 +11,24 @@ fetch("../data/rentals.json")
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    console.table(jsonObject); // temporary checking for valid response and data parsing
     const rentals = jsonObject['rentals'];
-    /* town[x] is used to select the relevant town*/
-/*    for (let i = 0; i < town[6].events.length; i++ ) {
-      /*Pending: add a conditional statement to only select the 3 required towns*/
-/*      let eventCard = document.createElement('section');
-      let event = document.createElement('p');
-      
-      event.textContent = town[6].events[i];    
-      
-      eventCard.appendChild(event);
-      
-      document.querySelector('div.eventCards').appendChild(eventCard);
-       
-    }
-*/
-  });
 
+    for (let i = 0; i < rentals.length; i++) {
+      /* Fill table tg1 (mid and large viewports) */
+      document.getElementById('type' + i).textContent = rentals[i].type;
+      document.getElementById('make' + i).textContent = rentals[i].model;
+      document.getElementById('persons' + i).textContent = rentals[i].maxPersons;
+      document.getElementById('reserveHalf' + i).textContent = '$' + rentals[i].reservation[0];
+      document.getElementById('reserveFull' + i).textContent = '$' + rentals[i].reservation[1];
+      document.getElementById('walkHalf' + i).textContent = '$' + rentals[i].walkIn[0];
+      document.getElementById('walkFull' + i).textContent = '$' + rentals[i].walkIn[1];
+
+      /* Fill table tg2 (small viewports) */
+      document.getElementById('desc' + i).innerText = rentals[i].type + '\n' + rentals[i].model + '\n' + rentals[i].maxPersons + ' seat(s)';
+      document.getElementById('reserve' + i).textContent = '$' + rentals[i].reservation[0] + ' | $' + rentals[i].reservation[1];
+      document.getElementById('walk' + i).textContent = '$' + rentals[i].reservation[1] + ' | $' + rentals[i].reservation[1];      
+
+    }
+
+  });

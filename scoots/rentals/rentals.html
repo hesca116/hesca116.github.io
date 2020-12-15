@@ -1,85 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rentals</title>
+  <meta name="description" content="Scoots - Main page">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/normalize.css">
   <link href="css/small.css" rel="stylesheet">
-  <!--
   <link href="css/medium.css" rel="stylesheet">
-  <link href="css/large.css" rel="stylesheet"> 
-  -->
+  <link href="css/large.css" rel="stylesheet">
+  <!-- Load the social media fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-  <h1>Find your vehicle!</h1>
-  <section class="rentals">
-    <table class="tg">
-      <thead>
-        <tr>
-          <th class="tableHead" colspan="3">Rental Specifications</th>
-          <th class="tableHead" colspan="2">Reservation</th>
-          <th class="tableHead" colspan="2">Walk-in</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="tableHead">Type</td>
-          <td class="tableHead">Make/Model</td>
-          <td class="tableHead">Max. Persons</td>
-          <td class="tableHead">Half-Day<br>(3 hrs)</td>
-          <td class="tableHead">Full Day</td>
-          <td class="tableHead">Half-Day<br>(3 hrs)</td>
-          <td class="tableHead">Full Day</td>
-        </tr>
-        <tr>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-        </tr>
-        <tr>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-        </tr>
-        <tr>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-        </tr>
-        <tr>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-        </tr>
-        <tr>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-          <td class="tableBody"></td>
-        </tr>
-      </tbody>
+  <header>
+    <nav>
+      <img src="../images/LogoTest.png" alt="Scoots Logo" width="150">
+      <button class="hamburguer" onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="navigation hide">
+        <li><a href="../home.html">Home</a></li>
+        <li class="nav--Active"><a href="../rentals/rentals.html">Rentals</a></li>
+        <li><a href="../reservations/reservations.html">Reservations</a></li>
+        <li><a href="../tours/tours.html">Tours</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Select your vehicle!</h1>
+
+    <section class="rentals">
+      <table class="tg1">
+        <thead>
+          <tr>
+            <th class="tableHead" colspan="3">Rental Specifications</th>
+            <th class="tableHead" colspan="2">Reservation</th>
+            <th class="tableHead" colspan="2">Walk-in</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tableHead" >Type</td>
+            <td class="tableHead" >Make/Model</td>
+            <td class="tableHead" >Seats</td>
+            <td class="tableHead" >Half-Day</td>
+            <td class="tableHead" >Full Day</td>
+            <td class="tableHead" >Half-Day</td>
+            <td class="tableHead" >Full Day</td>
+          </tr>
+          <tr>
+            <td class="tableBody" id="type0"></td>
+            <td class="tableBody" id="make0"></td>
+            <td class="tableBody tNumber" id="persons0"></td>
+            <td class="tableBody tNumber" id="reserveHalf0"></td>
+            <td class="tableBody tNumber" id="reserveFull0"></td>
+            <td class="tableBody tNumber" id="walkHalf0"></td>
+            <td class="tableBody tNumber" id="walkFull0"></td>
+          </tr>
+          <tr>
+            <td class="tableBody" id="type1"></td>
+            <td class="tableBody" id="make1"></td>
+            <td class="tableBody tNumber" id="persons1"></td>
+            <td class="tableBody tNumber" id="reserveHalf1"></td>
+            <td class="tableBody tNumber" id="reserveFull1"></td>
+            <td class="tableBody tNumber" id="walkHalf1"></td>
+            <td class="tableBody tNumber" id="walkFull1"></td>
+          </tr>
+          <tr>
+            <td class="tableBody" id="type2"></td>
+            <td class="tableBody" id="make2"></td>
+            <td class="tableBody tNumber" id="persons2"></td>
+            <td class="tableBody tNumber" id="reserveHalf2"></td>
+            <td class="tableBody tNumber" id="reserveFull2"></td>
+            <td class="tableBody tNumber" id="walkHalf2"></td>
+            <td class="tableBody tNumber" id="walkFull2"></td>
+          </tr>
+          <tr>
+            <td class="tableBody" id="type3"></td>
+            <td class="tableBody" id="make3"></td>
+            <td class="tableBody tNumber" id="persons3"></td>
+            <td class="tableBody tNumber" id="reserveHalf3"></td>
+            <td class="tableBody tNumber" id="reserveFull3"></td>
+            <td class="tableBody tNumber" id="walkHalf3"></td>
+            <td class="tableBody tNumber" id="walkFull3"></td>
+          </tr>
+          <tr>
+            <td class="tableBody" id="type4"></td>
+            <td class="tableBody" id="make4"></td>
+            <td class="tableBody tNumber" id="persons4"></td>
+            <td class="tableBody tNumber" id="reserveHalf4"></td>
+            <td class="tableBody tNumber" id="reserveFull4"></td>
+            <td class="tableBody tNumber" id="walkHalf4"></td>
+            <td class="tableBody tNumber" id="walkFull4"></td>
+          </tr>
+          <tr>
+            <td class="tableBody" id="type5"></td>
+            <td class="tableBody" id="make5"></td>
+            <td class="tableBody tNumber" id="persons5"></td>
+            <td class="tableBody tNumber" id="reserveHalf5"></td>
+            <td class="tableBody tNumber" id="reserveFull5"></td>
+            <td class="tableBody tNumber" id="walkHalf5"></td>
+            <td class="tableBody tNumber" id="walkFull5"></td>
+          </tr>
+        </tbody>
       </table>
 
-  </section>
+      <table class="tg2">
+        <thead>
+          <tr>
+            <th class="tableHead">Vehicle</th>
+            <th class="tableHead">Reservation <p>Half-Day | Full Day </p></th>
+            <th class="tableHead">Walk-in <p>Half-Day | Full Day </p></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tableBody" id="desc0"></td>
+            <td class="tableBody tNumber" id="reserve0"></td>
+            <td class="tableBody tNumber" id="walk0"></td>  
+          </tr>
+          <tr>
+            <td class="tableBody" id="desc1"></td>
+            <td class="tableBody tNumber" id="reserve1"></td>
+            <td class="tableBody tNumber" id="walk1"></td>            
+          </tr>
+          <tr>
+            <td class="tableBody" id="desc2"></td>
+            <td class="tableBody tNumber" id="reserve2"></td>
+            <td class="tableBody tNumber" id="walk2"></td>  
+          </tr>
+          <tr>
+            <td class="tableBody" id="desc3"></td>
+            <td class="tableBody tNumber" id="reserve3"></td>
+            <td class="tableBody tNumber" id="walk3"></td>  
+          </tr>
+          <tr>
+            <td class="tableBody" id="desc4"></td>
+            <td class="tableBody tNumber" id="reserve4"></td>
+            <td class="tableBody tNumber" id="walk4"></td>  
+          </tr>
+          <tr>
+            <td class="tableBody" id="desc5"></td>
+            <td class="tableBody tNumber" id="reserve5"></td>
+            <td class="tableBody tNumber" id="walk5"></td>  
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+  </main>
+  <footer>
+    <section class="footerBar">
+      &copy; <span id="currentYear"></span> | Hector Solano Cambonero | Costa Rica | <a
+        href="./resources.html">Resources</a>
+      <br>
+      <b class="footerBar__bottom">Last Updated: <span id="lastModified"></span></b>
+    </section>
+  </footer>
+
+  <!-- responsive menu -->
+  <script src="../js/respMenu.js"></script>
+  <!-- google fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="../js/webFontLoad.js"></script>
+  <!-- footer date -->
+  <script src="js/footerDates.js"></script>
+  <!-- JSON source -->
   <script src="js/rentals.js"></script>
 </body>
+
 </html>

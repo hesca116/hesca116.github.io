@@ -1,0 +1,79 @@
+@media only screen and (min-width: 688px) {
+
+  /*----------- NAV MENU -----------*/
+  nav {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  nav ul,
+  nav ul.hide {
+    align-items: center;
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: .6rem 1%;
+    /*make each item bigger for easy finger tapping*/
+  }
+
+  /*----------- BODY STYLING -----------*/
+
+  /*----------- TABLE STYLING -----------*/
+  .tg2 {
+    display: none;
+  }
+
+  .tg1 {
+    display: inline;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0px auto;
+  }
+
+  .tg1 td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg1 th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg1 .tableBody {
+    border-color: inherit;
+    vertical-align: middle
+  }
+
+  .tg1 .tableHead {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: middle
+  }
+ 
+
+}

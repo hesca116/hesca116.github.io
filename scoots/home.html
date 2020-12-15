@@ -1,12 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Scoots: rentals for adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoots!</title>
+  <meta name="description" content="Scoots - Main page">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <!-- Load the social media fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-  
-  
+  <header>
+    <!-- weather alerts -->
+    <!-- You can use alertTest.json to test the alerts. It contains an example of an alert, taken from https://openweathermap.org/api/push-weather-alerts -->
+    <section id="alertChecker" class="wAlert hide">
+      <img src="./images/warning.png" alt="warining sign" width="50">
+      <h1>Attention!</h1>
+      <img src="./images/warning.png" alt="warining sign" width="50">
+      <button class="wAlert__button" onclick="toggleAlert()">&times;</button>
+      <p id="wAlertHeadline"></p>
+      <p>Description: <span id="wAlertDesc"></span></p>
+      <p>Instructions: <span id="wAlertInstr"></span></p>
+
+    </section>
+
+    <!-- Navigation -->
+    <nav>
+      <img src="./images/LogoTest.png" alt="Scoots Logo" width="150">
+      <button class="hamburguer" onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="navigation hide">
+        <li class="nav--Active"><a href="./home.html">Home</a></li>
+        <li><a href="./rentals/rentals.html">Rentals</a></li>
+        <li><a href="./reservations/reservations.html">Reservations</a></li>
+        <li><a href="./tours/tours.html">Tours</a></li>
+        <li><a href="./contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="heroContainer">
+      <picture class="heroImage">
+        <source srcset="./images/TouristsOnScooters01_mid(992x558).jpg"
+          media="(min-width: 688px) and (max-width: 992px)">
+        <source srcset="./images/TouristsOnScooters01_large(1920x1080).jpg" media="(min-width: 992px)">
+        <img class="heroImage" src="./images/TouristsOnScooters01_small(668x387).jpg" alt="Tourists on Scooters">
+      </picture>
+      <div class="ctaReservation">
+        <h1>Cruise the Cozumel island! </h1>
+        <h2> Scooters, ATV and Jeep rentals</h1>
+          <div>Click any to reserve yours:</div>
+          <a href="./reservations/reservations.html">RESERVATIONS</a>
+          <a href="#" class="fa fa-whatsapp"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <p>Call us at +55 9876 5985 </p>
+      </div>
+    </section>
+    <section class="weatherContainer">
+      <section class="wSummary">
+        <h2>Weather Summary</h2>
+        <table class="sumTable">
+          <tr>
+            <td class="fcol">Currently: </td>
+            <td><span id="currently"></span></td>
+          </tr>
+          <tr>
+            <td class="fcol">Temperature: </td>
+            <td><span id="currentTemp"></span>&nbsp;°F</td>
+          </tr>
+          <tr>
+            <td class="fcol">Humidity: </td>
+            <td><span id="humidity"></span>&nbsp;%</td>
+          </tr>
+          <tr>
+            <td class="fcol">Wind Speed: </td>
+            <td><span id="wSpeed"></span>&nbsp;mph</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <section class="mainMiddle">
+      <picture class="heroImage">
+        <source srcset="./images/Cozumel01_mid(992x558).jpg" media="(min-width: 688px) and (max-width: 992px)">
+        <source srcset="./images/Cozumel01_large(1920x1080).jpg" media="(min-width: 992px)">
+        <img class="heroImage" src="./images/Cozumel01_small(668x387).jpg" alt="Cozumel Beach">
+      </picture>
+      <section class="forecastBar">
+        <h2>Three Day Forecast</h2>
+        <div class="forecastItems">
+          <div class="card1">
+            <p id="day1"></p>
+            <img id="forecastImg1" src="" alt="">
+            <span id="forecastTemp1"> </span><span>&deg;</span>
+          </div>
+          <div class="card2">
+            <p id="day2"></p>
+            <img id="forecastImg2" src="" alt="">
+            <span id="forecastTemp2"></span><span>&deg;</span>
+          </div>
+          <div class="card3">
+            <p id="day3"></p>
+            <img id="forecastImg3" src="" alt="">
+            <span id="forecastTemp3"></span><span>&deg;</span>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="mainBottom">
+      <h2>Your adventure starts here!</h2>
+      <h3>-Select your rental-</h3>
+      <div class="rentalCards">
+        <section>
+          <h2>Scooters</h2>
+          <picture class="rentalType">
+            <source srcset="./images/Rentals_Scooter_HondaMetro_Promo_mid(350x233).jpg" media="(min-width: 688px)">
+            <img class="rentalType_Scooter" src="./images/Rentals_Scooter_HondaMetro_Promo_small(220x146).jpg"
+              alt="Scooters">
+          </picture>
+          <p>Starting at $20</p>
+          <button class="reserve" onclick="window.location.href='./reservations/reservations.html';"> Reserve!</button>
+        </section>
+        <section>
+          <h2>ATVs</h2>
+          <picture class="rentalType">
+            <source srcset="./images/Rentals_ATV_HondaPioneer_Promo2_mid(350x241).jpg" media="(min-width: 688px)">
+            <img class="rentalType_ATV" src="./images/Rentals_ATV_HondaPioneer_Promo2_small(220x151).jpg" alt="ATVs">
+          </picture>
+          <p>Starting at $50</p>
+          <button class="reserve" onclick="window.location.href='./reservations/reservations.html';"> Reserve!</button>
+        </section>
+        <section>
+          <h2>Jeeps</h2>
+          <picture class="rentalType">
+            <source srcset="./images/Rentals_Jeep_2door_Promo_mid(350x208).jpg" media="(min-width: 688px)">
+            <img class="rentalType_ATV" src="./images/Rentals_Jeep_2door_Promo_small(220x130).jpg" alt="ATVs">
+          </picture>
+          <p>Starting at $60</p>
+          <button class="reserve" onclick="window.location.href='./reservations/reservations.html';"> Reserve!</button>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footerBar">
+      &copy; <span id="currentYear"></span> | Hector Solano Cambonero | Costa Rica | <a
+        href="./resources.html">Resources</a>
+      <br>
+      <b class="footerBar__bottom">Last Updated: <span id="lastModified"></span></b>
+    </section>
+  </footer>
+
+  <!-- responsive menu -->
+  <script src="js/respMenu.js"></script>
+  <!-- google fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webFontLoad.js"></script>
+  <!-- footer date -->
+  <script src="js/footerDates.js"></script>
+  <!-- weather API scripts -->
+  <script src="js/nextDays.js"></script>
+  <script src="js/weather.js"></script>
 </body>
+
 </html>

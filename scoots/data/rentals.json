@@ -53,8 +53,8 @@
         ]
       },
       {
-        "type": "Car",
-        "model": "Jeep Wrangler - 2 door",
+        "type": "Jeep",
+        "model": "Wrangler - 2 door",
         "maxPersons": "4",
         "reservation": [
           "60",
@@ -66,8 +66,8 @@
         ]
       },
       {
-        "type": "Car",
-        "model": "Jeep Wrangler - 4 door with A/C",
+        "type": "Jeep",
+        "model": "Wrangler - 4 door with A/C",
         "maxPersons": "5",
         "reservation": [
           "70",

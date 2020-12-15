@@ -1,0 +1,46 @@
+@media only screen and (min-width: 688px) {
+
+  /*----------- NAV MENU -----------*/
+  nav {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  nav ul,
+  nav ul.hide {
+    align-items: center;
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav ul li a{
+    border:none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);    
+    padding: .6rem 1%; /*make each item bigger for easy finger tapping*/
+  }
+ 
+/*----------- BODY STYLING -----------*/
+
+.heroContainer{
+  position: relative;
+}
+
+.ctaReservation{
+  text-align: center;
+  position: absolute;
+  top: 150px;  
+  left: 0;
+  right: 0;  
+  border-radius: 5px;
+}
+
+.ctaReservation, .ctaReservation h1{
+   text-align: lcenter;
+}
