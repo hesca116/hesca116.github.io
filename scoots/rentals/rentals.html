@@ -33,26 +33,26 @@
   </header>
 
   <main>
-    <h1>Select your vehicle!</h1>
-
     <section class="rentals">
+      <h1>Reserve and save!</h1>
       <table class="tg1">
+        <!-- full sized table for mid and large viewports -->
         <thead>
           <tr>
-            <th class="tableHead" colspan="3">Rental Specifications</th>
-            <th class="tableHead" colspan="2">Reservation</th>
-            <th class="tableHead" colspan="2">Walk-in</th>
+            <th class="tableHead rSpecs" colspan="3">Rental Specifications</th>
+            <th class="tableHead rRes" colspan="2">Reservation</th>
+            <th class="tableHead rWalk" colspan="2">Walk-in</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="tableHead" >Type</td>
-            <td class="tableHead" >Make/Model</td>
-            <td class="tableHead" >Seats</td>
-            <td class="tableHead" >Half-Day</td>
-            <td class="tableHead" >Full Day</td>
-            <td class="tableHead" >Half-Day</td>
-            <td class="tableHead" >Full Day</td>
+            <td class="tableHead">Type</td>
+            <td class="tableHead">Make/Model</td>
+            <td class="tableHead">Seats</td>
+            <td class="tableHead">Half-Day</td>
+            <td class="tableHead">Full Day</td>
+            <td class="tableHead">Half-Day</td>
+            <td class="tableHead">Full Day</td>
           </tr>
           <tr>
             <td class="tableBody" id="type0"></td>
@@ -112,47 +112,94 @@
       </table>
 
       <table class="tg2">
+        <!-- table for small viewports -->
         <thead>
           <tr>
             <th class="tableHead">Vehicle</th>
-            <th class="tableHead">Reservation <p>Half-Day | Full Day </p></th>
-            <th class="tableHead">Walk-in <p>Half-Day | Full Day </p></th>
+            <th class="tableHead">Reservation <p>Half-Day | Full Day </p>
+            </th>
+            <th class="tableHead">Walk-in <p>Half-Day | Full Day </p>
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="tableBody" id="desc0"></td>
             <td class="tableBody tNumber" id="reserve0"></td>
-            <td class="tableBody tNumber" id="walk0"></td>  
+            <td class="tableBody tNumber" id="walk0"></td>
           </tr>
           <tr>
             <td class="tableBody" id="desc1"></td>
             <td class="tableBody tNumber" id="reserve1"></td>
-            <td class="tableBody tNumber" id="walk1"></td>            
+            <td class="tableBody tNumber" id="walk1"></td>
           </tr>
           <tr>
             <td class="tableBody" id="desc2"></td>
             <td class="tableBody tNumber" id="reserve2"></td>
-            <td class="tableBody tNumber" id="walk2"></td>  
+            <td class="tableBody tNumber" id="walk2"></td>
           </tr>
           <tr>
             <td class="tableBody" id="desc3"></td>
             <td class="tableBody tNumber" id="reserve3"></td>
-            <td class="tableBody tNumber" id="walk3"></td>  
+            <td class="tableBody tNumber" id="walk3"></td>
           </tr>
           <tr>
             <td class="tableBody" id="desc4"></td>
             <td class="tableBody tNumber" id="reserve4"></td>
-            <td class="tableBody tNumber" id="walk4"></td>  
+            <td class="tableBody tNumber" id="walk4"></td>
           </tr>
           <tr>
             <td class="tableBody" id="desc5"></td>
             <td class="tableBody tNumber" id="reserve5"></td>
-            <td class="tableBody tNumber" id="walk5"></td>  
+            <td class="tableBody tNumber" id="walk5"></td>
           </tr>
         </tbody>
       </table>
 
+    </section>
+    <section class="mainBottom">
+      <h1>Available Rentals</h1>
+      <!-- Expandability: more vehicles can be added to each category as the company acquires more and different models-->
+      <h2>Scooters</h2>
+      <h3>Honda Metropolitan</h3>
+      <picture class="responsiveGallery">
+        <img src="./images/hondaMetro01.jpg" alt="Honda Metro Scooter photo 1">
+        <img src="./images/hondaMetro02.jpg" alt="Honda Metro Scooter photo 2">
+        <img src="./images/hondaMetro03.jpg" alt="Honda Metro Scooter photo 3">
+      </picture>
+      <h3>Honda DIO</h3>
+      <picture class="responsiveGallery">
+        <img src="./images/hondaDio01.jpg" alt="Honda Dio Scooter photo 1">
+        <img src="./images/hondaDio02.jpg" alt="Honda Dio Scooter photo 2">
+        <img src="./images/hondaDio03.jpg" alt="Honda Dio Scooter photo 3">
+      </picture>
+      <h3>Honda PCX-150</h3>
+      <picture class="responsiveGallery">
+        <img src="./images/hondaPCX01.jpg" alt="Honda PCX Scooter photo 1">
+        <img src="./images/hondaPCX02.jpg" alt="Honda PCX Scooter photo 2">
+        <img src="./images/hondaPCX03.jpg" alt="Honda PCX Scooter photo 3">
+      </picture>
+      <h2>ATVs</h2>
+      <h3>Honda Pioneer</h3>
+      <picture class="responsiveGallery">
+        <img src="./images/hondaPioneer01.jpg" alt="Honda Pioneer ATV photo 1">
+        <img src="./images/hondaPioneer02.jpg" alt="Honda Pioneer ATV photo 2">
+        <img src="./images/hondaPioneer03.jpg" alt="Honda Pioneer ATV photo 3">
+      </picture>
+      <h2>Jeeps</h2>
+      <h3>Wrangler - 2 Doors</h3>
+      <picture class="responsiveGallery">
+        <img src="./images/Wrangler2d01.jpg" alt="Jeep Wrangler 2Door photo 1">
+        <img src="./images/Wrangler2d02.jpg" alt="Jeep Wrangler 2Door photo 2">
+        <img src="./images/Wrangler2d03.jpg" alt="Jeep Wrangler 2Door photo 3">
+      </picture>
+      <h3>Wrangler - 4 Doors</h3>
+      <p>(Includes A/C)</p>
+      <picture class="responsiveGallery">
+        <img src="./images/Wrangler4d01.jpg" alt="Jeep Wrangler 2Door photo 1">
+        <img src="./images/Wrangler4d02.jpg" alt="Jeep Wrangler 2Door photo 2">
+        <img src="./images/Wrangler4d03.jpg" alt="Jeep Wrangler 2Door photo 3">
+      </picture>
     </section>
   </main>
   <footer>

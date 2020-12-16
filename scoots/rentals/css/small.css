@@ -13,14 +13,17 @@ body {
   line-height: 1.4;
 }
 
-header{
-  padding: 1.5rem;
+main {
+  max-width: 960px;
+  margin: 0 auto;  
 }
 
-header {
-  margin: 1.25rem auto;
+header{
+  padding: 1.5rem;
   max-width: 960px;  
+  margin: 0 auto;  
 }
+
 
 header,
 footer {
@@ -29,72 +32,43 @@ footer {
 }
 
 header nav{
-  font-family: 'BenchNine', sans-serif;
   text-transform: uppercase;
 }
 
 /*----------- GENERAL BODY STYLING -----------*/
+h1, h2, h3 {
+  text-align: center;
+}
 
 h1 {
-  text-align: left;
   text-transform: uppercase;
-  font-size: 2.1rem;
-  margin: 1.4rem 0 0 0;
+  font-size: 2.5rem;
+  margin: .5rem 0 1.4rem 0;
   font-family: 'BenchNine', sans-serif;
 }
 
 h2 {
   margin: 0.2em 0 0 0;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   font-family: 'BenchNine', sans-serif;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   margin: 0.2em;
   font-family: 'BenchNine', sans-serif;
 }
 
-h4{
-  font-size: 12px;
-  text-transform: uppercase;
-  font-family: 'BenchNine', sans-serif;
-  margin: 0 0 1.5rem 0 ;
-}
-
-p, span, a {
+p, a, table tr {
   font-family: 'Dosis', sans-serif;
-  font-size: 18px;
-  margin: .2rem 0;  
-}
-
-.ctaReservation {  
-  padding: 1em;
-  background-color: rgba(58, 168, 243, 0.3);  
-  position: relative;
-}
-
-.ctaReservation, .ctaReservation h1{
-  text-align: center;
-}
-
-.ctaReservation a{
-  text-decoration: none;
-  color: black;
   font-size: 20px;
-  padding-left: .8rem;  
+  margin: .2rem 0; 
+  text-align: center; 
 }
 
 /*----------- NAVIGATION MENU -----------*/
-
-
-
-/*nav{
-  border: 1px solid rgba(0,0,0,0.3);
-}
-*/
 
 .hamburguer{
   float: right;
@@ -136,15 +110,15 @@ nav ul li a:hover {
   color: white;
 }
 
-/*----------- BODY STYLING -----------*/
-
 /*----------- START OF TABLE STYLING -----------*/
-.rentals{
-  max-width: 100%;
-}
+
 
 .tableBody.tNumber{
   text-align: center;
+}
+
+table tr th{  
+  background-color: #82CFC4a6;
 }
 
 .tg1 {
@@ -153,32 +127,31 @@ nav ul li a:hover {
 
 .tg2 {
   border-collapse: collapse;
-  border-spacing: 0;
-  margin: 0px auto;
+  border-spacing: 0;  
+  max-width: 85%;
+  margin: 0 auto 2rem;
 }
 
 .tg2 td {
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  font-family: Arial, sans-serif;
+  border: solid 1px;
   font-size: 14px;
   overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
 }
 
-.tg2 th {
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
+.tg2 th {  
+  width: 33%;
+  border: 1px solid;  
+  font-family: 'Dosis', sans-serif;  
   overflow: hidden;
   padding: 10px 5px;
-  word-break: normal;
+  word-break: normal;  
 }
+
+.tg2 th p{
+  font-size: small;
+}  
 
 .tg2 .tableBody {
   border-color: inherit;
@@ -192,6 +165,29 @@ nav ul li a:hover {
 }
 
 /*----------- END OF TABLE STYLING -----------*/
+
+/*----------- START OF MAIN BOTTOM -----------*/
+  .mainBottom{
+    padding: 1rem 0;
+    background-color: #e8e8e8;
+    max-width: 960px;
+  }
+
+  .responsiveGallery{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .responsiveGallery img{
+    max-width: 70%;
+    border: 1px solid darkgrey;
+    border-radius: 1em;
+    margin: .5rem;    
+    
+  }
+
+/*----------- END OF MAIN BOTTOM -----------*/
 
 /*----------- GENERAL FOOTER STYLING -----------*/
 footer{

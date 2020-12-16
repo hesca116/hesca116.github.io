@@ -1,5 +1,24 @@
 @media only screen and (min-width: 688px) {
 
+/*erase this START*/
+div.quote{ 
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 1px #777777;
+  background-color: #bedbed;
+  color: #777777
+}
+
+.three-col{
+  display: grid;
+  grid-template-columns: 250px 2fr 1fr; 
+  grid-gap: 40px;
+  align-items: center;
+}
+
+/*erase this END*/
+
   /*----------- NAV MENU -----------*/
   nav {
     display: grid;
@@ -17,48 +36,44 @@
   }
 
   nav ul li {
-    flex: 1 1 100%;
+    flex: 1 1 100%;    
   }
 
   nav ul li a {
     border: none;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: .6rem 1%;
+    font-size: 1.3em;
     /*make each item bigger for easy finger tapping*/
   }
-
-  /*----------- BODY STYLING -----------*/
 
   /*----------- TABLE STYLING -----------*/
   .tg2 {
     display: none;
   }
 
+  .rentals{
+    display: grid;
+    justify-content: center;
+  }
+
   .tg1 {
-    display: inline;
+    display: block;
     border-collapse: collapse;
     border-spacing: 0;
-    margin: 0px auto;
+    margin: 0 auto 2rem;    
   }
 
   .tg1 td {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    border: 1px solid;    
+    font-size: 20px;
     overflow: hidden;
     padding: 10px 5px;
     word-break: normal;
   }
 
   .tg1 th {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
+    border: 1px solid;   
     overflow: hidden;
     padding: 10px 5px;
     word-break: normal;
@@ -70,10 +85,20 @@
   }
 
   .tg1 .tableHead {
+    background-color: #82cfc4a6;
     border-color: inherit;
     text-align: center;
     vertical-align: middle
   }
  
+  /********** RENTALS STYLING *********/
+
+  .responsiveGallery{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .responsiveGallery img{
+    max-width: 80%;
+  }
 
 }

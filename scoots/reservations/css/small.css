@@ -13,13 +13,15 @@ body {
   line-height: 1.4;
 }
 
-header{
-  padding: 1.5rem;
+main {
+  max-width: 960px;
+  margin: 0 auto; 
 }
 
-header {
-  margin: 1.25rem auto;
+header{
+  padding: 1.5rem;
   max-width: 960px;  
+  margin: 0 auto;  
 }
 
 header,
@@ -29,16 +31,17 @@ footer {
 }
 
 header nav{
-  font-family: 'BenchNine', sans-serif;
   text-transform: uppercase;
 }
 
 /*----------- GENERAL BODY STYLING -----------*/
+h1, h2, h3 {
+  text-align: center;
+}
 
-h1 {
-  text-align: left;
+h1 {  
   text-transform: uppercase;
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   margin: 1.4rem 0 0 0;
   font-family: 'BenchNine', sans-serif;
 }
@@ -46,56 +49,41 @@ h1 {
 h2 {
   margin: 0.2em 0 0 0;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   font-family: 'BenchNine', sans-serif;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   margin: 0.2em;
   font-family: 'BenchNine', sans-serif;
 }
 
 h4{
-  font-size: 12px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-family: 'BenchNine', sans-serif;
   margin: 0 0 1.5rem 0 ;
 }
 
-p, .ctaReservation div, a {
+p, a, li{
   font-family: 'Dosis', sans-serif;
   font-size: 18px;
   margin: .2rem 0;  
 }
 
-.ctaReservation {  
-  padding: 1em;
-  background-color: rgba(58, 168, 243, 0.3);  
-  position: relative;
+button{
+  background-color: #82CFC4;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5rem;
 }
 
-.ctaReservation, .ctaReservation h1{
-  text-align: center;
+button:hover{
+  background-color: #3AA8F3;
+  color: white;
 }
-
-.ctaReservation a{  
-  color: black;
-  font-size: 20px;
-  padding-left: .8rem;  
-}
-
-
-
 /*----------- NAVIGATION MENU -----------*/
-
-
-
-/*nav{
-  border: 1px solid rgba(0,0,0,0.3);
-}
-*/
 
 .hamburguer{
   float: right;
@@ -138,9 +126,8 @@ nav ul li a:hover {
 }
 
 /*----------- BODY STYLING -----------*/
-.heroImage{ 
-  width: 100%;
-  margin: 0;  
+.hide {
+  display: none;
 }
 
 /*----------- GENERAL FOOTER STYLING -----------*/
