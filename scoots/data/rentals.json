@@ -2,7 +2,7 @@
   "rentals": [
       {
           "type": "Scooter",
-          "model": "Honda Metro",
+          "model": "Honda Metro (49cc)",
           "maxPersons": "1",
           "reservation": [
             "20",
@@ -15,7 +15,7 @@
       },
       {
         "type": "Scooter",
-        "model": "Honda Dio",
+        "model": "Honda Dio (110cc)",
         "maxPersons": "2",
         "reservation": [
           "30",
@@ -28,7 +28,7 @@
       },
       {
         "type": "Scooter",
-        "model": "Honda PCX150",
+        "model": "Honda PCX150 (149cc)",
         "maxPersons": "2",
         "reservation": [
           "40",
@@ -41,7 +41,7 @@
       },
       {
         "type": "ATV",
-        "model": "Honda Pioneer",
+        "model": "Honda Pioneer 1000",
         "maxPersons": "4",
         "reservation": [
           "50",

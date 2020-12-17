@@ -24,7 +24,6 @@ header{
   margin: 0 auto;  
 }
 
-
 header,
 footer {
   background-color: #ffffff;
@@ -184,7 +183,6 @@ table tr th{
     border: 1px solid darkgrey;
     border-radius: 1em;
     margin: .5rem;    
-    
   }
 
 /*----------- END OF MAIN BOTTOM -----------*/

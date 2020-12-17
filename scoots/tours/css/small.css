@@ -13,12 +13,15 @@ body {
   line-height: 1.4;
 }
 
-header{
-  padding: 1.5rem;
+main {
+  max-width: 960px;
+  margin: 0 auto;  
 }
 
-header {
+header{
+  padding: 1.5rem;
   max-width: 960px;  
+  margin: 0 auto;  
 }
 
 header,
@@ -28,73 +31,44 @@ footer {
 }
 
 header nav{
-  font-family: 'BenchNine', sans-serif;
   text-transform: uppercase;
 }
 
 /*----------- GENERAL BODY STYLING -----------*/
 
-h1 {
-  text-align: left;
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {  
   text-transform: uppercase;
-  font-size: 2.1rem;
-  margin: 1.4rem 0 0 0;
+  font-size: 2.5rem;
+  margin: .5rem 0 1.4rem 0;
   font-family: 'BenchNine', sans-serif;
 }
 
 h2 {
   margin: 0.2em 0 0 0;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   font-family: 'BenchNine', sans-serif;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   margin: 0.2em;
   font-family: 'BenchNine', sans-serif;
 }
 
-h4{
-  font-size: 12px;
-  text-transform: uppercase;
-  font-family: 'BenchNine', sans-serif;
-  margin: 0 0 1.5rem 0 ;
-}
-
-p, span, a {
+p, a {
   font-family: 'Dosis', sans-serif;
-  font-size: 18px;
-  margin: .2rem 0;  
-}
-
-.ctaReservation {  
-  padding: 1em;
-  background-color: rgba(58, 168, 243, 0.3);  
-  position: relative;
-}
-
-.ctaReservation, .ctaReservation h1{
-  text-align: center;
-}
-
-.ctaReservation a{
-  text-decoration: none;
-  color: black;
   font-size: 20px;
-  padding-left: .8rem;  
+  margin: .2rem 0; 
+  text-align: center;  
 }
 
 /*----------- NAVIGATION MENU -----------*/
-
-
-
-/*nav{
-  border: 1px solid rgba(0,0,0,0.3);
-}
-*/
-
 .hamburguer{
   float: right;
   margin: .2rem 2%;  
@@ -136,9 +110,53 @@ nav ul li a:hover {
 }
 
 /*----------- BODY STYLING -----------*/
-.heroImage{ 
-  width: 100%;
-  margin: 0;  
+
+.mainTop {
+  display: grid;
+  justify-items: center;
+}
+
+.mainBottom{
+  padding: 2rem 0;
+  background-color: #82cfc470;
+}
+.mainTop p, 
+.mainBottom p{
+  text-align: justify;
+  padding: 1rem 2rem;
+}
+
+.mainTop h1{
+  margin-bottom: 0;
+}
+
+.mainTop img{  
+  width: 70%;
+  max-width: 350px;  
+}
+
+.responsiveGallery{
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-items: center;  
+}
+.card{
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-items: center; 
+}
+
+.xtraText{
+  display: none;
+}
+
+.responsiveGallery img{
+  max-width: 70%;
+  border: 1px solid darkgrey;
+  border-radius: 1em;
+  margin: .5rem 0 3rem 0;  
+
+  
 }
 
 /*----------- GENERAL FOOTER STYLING -----------*/

@@ -4,4 +4,25 @@
     font-size: 1.6em;
   }
 
+  .mainTop {
+    grid-template-columns: 40% 1fr;
+  }
+
+  .mainTop article:nth-of-type(2) p:nth-of-type(1){
+    padding-top: 0;
+    position: relative;
+    Top: -20px;
+  }
+
+  .mainTop article:nth-of-type(2) p:nth-of-type(2){
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    Top: -20px;
+  }
+
+
+
+
+
 }
