@@ -5,17 +5,18 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;     
 }
 
 body {
   font-size: 12px;
   line-height: 1.4;
+  
 }
 
 main {
   max-width: 960px;
-  margin: 0 auto; 
+  margin: 0 auto;   
 }
 
 header{
@@ -73,16 +74,7 @@ p, a, li{
   margin: .2rem 0;  
 }
 
-button{
-  background-color: #82CFC4;
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.5rem;
-}
 
-button:hover{
-  background-color: #3AA8F3;
-  color: white;
-}
 /*----------- NAVIGATION MENU -----------*/
 
 .hamburguer{
@@ -112,7 +104,6 @@ nav ul li a{
   text-align: center; 
   padding: .8rem 2%; /*make each item bigger for easy finger tapping*/
   text-decoration: none;
-  font-size: 1.6em;
   color: darkgrey;  
 }
 
@@ -126,8 +117,96 @@ nav ul li a:hover {
 }
 
 /*----------- BODY STYLING -----------*/
-.hide {
-  display: none;
+
+/*----------- FORM STYLING -----------*/
+
+form fieldset{
+  margin: 2rem 0;
+  border:1px solid #3AA8F3;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form legend{
+  color: #3AA8F3;
+  margin: 0 1rem;
+  padding: 0 .5rem;   
+  font-size: 1.6rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-outer{
+  margin-right: 3rem;
+}
+
+.flex-outer li textarea, .flex-outer li input {
+  background-color: #e8e8e8;
+  border: 1px solid rgba(230, 230, 230, 0.7);
+}
+
+.flex-inner {
+  justify-content: space-between;
+}
+
+.flex-inner li {
+  width: 180px;
+}
+
+.flex-outer > li > label,
+.flex-outer li p, 
+.flex-outer li div{
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+ 
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.comments p{
+  font-size: small;
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+
+.rAgInfo p{
+  margin: 1rem;
+}
+
+.rAgreementInfo li{
+  font-size: small;
+  margin: 0 1rem;
+}
+
+.dropdown{
+  max-width: 200px;  
+}
+
+.submitBtn{
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 8px 16px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.submitBtn:hover{ 
+  background-color: #3AA8F3;
+  color: white;
+  
 }
 
 /*----------- GENERAL FOOTER STYLING -----------*/

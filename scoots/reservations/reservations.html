@@ -34,22 +34,179 @@
 
   <main>
     <h1>Begin your adventure here!</h1>
-    <section class="rAgree hide">
-      <h2>Rental agreement information</h2>
-      <ul>
-        <li>A $50 security deposit is required to confirm reservations.</li>
-        <li>A valid drivers license is required in hand at time of rental.</li>
-        <li>No one under 12 years of age is allowed to ride on the scooters.</li>
-        <li>Fuel charge not included.</li>
-        <li>Unlimited mileage.</li>
-        <li>Liability insurance is free of charge.</li>
-        <li>Reservations rate requires 24 hour prior notification.</li>
-        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
-        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
-        <li>Rentals may be returned to either location.</li>
-      </ul>
-    </section>
-    <button onclick="">Reserve!</button>
+    <form method="GET" action="success.html">
+      <fieldset class="rentalSelection">
+        <legend class="sub">Rental Selection</legend>
+        <ul class="flex-outer">
+          <li>
+            <p>Rental Type</p>
+            <ul class="flex-inner">
+              <li>
+                <input type="checkbox" id="scMetro">
+                <label for="scMetro">&nbsp;Scooter - Honda Metro</label>
+              </li>
+              <li>
+                <input type="checkbox" id="scDio">
+                <label for="scDio">&nbsp;Scooter - Honda DIO</label>
+              </li>
+              <li>
+                <input type="checkbox" id="scPCX">
+                <label for="scPCX">&nbsp;Scooter - Honda PCX</label>
+              </li>
+              <li>
+                <input type="checkbox" id="atvPioneer">
+                <label for="atvPioneer">&nbsp;ATV - Honda Pioneer</label>
+              </li>
+              <li>
+                <input type="checkbox" id="jeep2">
+                <label for="jeep2">&nbsp;Jeep Wrangler - 2 Door</label>
+              </li>
+              <li>
+                <input type="checkbox" id="jeep4">
+                <label for="jeep4">&nbsp;Jeep Wrangler - 4 Door</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>How many vehicles are you reserving?</p>
+            <ul class="flex-inner">
+              <li>
+                <input type="radio" name="number" value="1">
+                <label for="number1">&nbsp; 1</label>
+              </li>
+              <li>
+                <input type="radio" name="number" value="2">
+                <label for="number2">&nbsp; 2</label>
+              </li>
+              <li>
+                <input type="radio" name="number" value="3">
+                <label for="number3">&nbsp; 3</label>
+              </li>
+              <li>
+                <input type="radio" name="number" value="4">
+                <label for="number4">&nbsp; 4</label>
+              </li>
+              <li>
+                <input type="radio" name="number" value="5">
+                <label for="number5">&nbsp; 5</label>
+              </li>
+              <li>
+                <input type="radio" name="number" value="6+">
+                <label for="number6">&nbsp; More </label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <label class="top" for="sType">Pick up location:*</label>
+            <!--<div class="form-box"> -->
+            <ul class="flex-inner">
+              <li>                
+                <input list="puLocation" id="sType" class="dropdown" name="puLocationChoice" required />
+                <datalist id="puLocation">
+                  <option value="Cozumel Ferry Dock">
+                  <option value="Puerta Maya">
+                  <option value="My location"></option>
+                </datalist>
+              </li>
+            </ul>
+            <!--</div>-->
+          </li>
+          <li>
+            <p>Reservation Period Start</p>
+            <ul class="flex-inner">
+              <li>
+                <label for="sDate">Pick up Date*</label>
+                <input type="date" id="sDate" required>
+              </li>
+              <li>
+                <label for="sTime">Pick up Time*</label>
+                <input type="time" id="sTime" required>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Reservation Period End</p>
+            <ul class="flex-inner">
+              <li>
+                <label for="eDate">Drop off date*</label>
+                <input type="date" id="eDate" required>
+              </li>
+              <li>
+                <label for="eTime">Drop off Time*</label>
+                <input type="time" id="eTime" required>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="clientInfo">
+        <legend>Confirmation information</legend>
+        <ul class="flex-outer">
+          <li>
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" placeholder="Enter your full name here" required>
+          </li>
+          <li>
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" name="phone" required>
+          </li>
+          <li>
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="YourName@xyzmail.com" required>
+          </li>
+          <li>
+            <label for="home">Home State or Country</label>
+            <input type="text" id="home" placeholder="Enter your home state or country of precedence">
+          </li>
+          <li>
+            <label for="cruiseLine">Cruise Line</label>
+            <input type="text" id="cruiseLine" placeholder="Enter your cruise line (if applicable)">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="comments">
+        <legend>Accomodations or comments</legend>
+        <p>Please specify any necessary details. For instance: <br> 
+        If you want to rent different vehicles, please specify their names and quantities here <br>
+        2+ day rentals have free delivery to any Cozumel location of your choice <br>
+        You can specify the pickup location here too
+      </p>
+        <ul class="flex-outer">
+          <li>
+            <label for="message">Type Here: </label>
+            <textarea rows="6" id="message"
+              placeholder="i.e. Please deliver vehicles to (location). I would like 1 Honda Metro and 2 Honda DIOs. "></textarea>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="rAgInfo">
+        <legend>Rental agreement information</legend>
+        <p>Please read this information carefully:</p>
+        <ul class="rAgreementInfo">
+          <li>A $50 security deposit is required to confirm reservations.</li>
+          <li>A valid drivers license is required in hand at time of rental.</li>
+          <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+          <li>Fuel charge not included.</li>
+          <li>Unlimited mileage.</li>
+          <li>Liability insurance is free of charge.</li>
+          <li>Reservations rate requires 24 hour prior notification.</li>
+          <li>Payment methods: Google Pay, cash, credit card, debit card, or PayPal.</li>
+          <li>Rentals may be returned to either location.</li>
+        </ul>
+        <ul class="flex-outer">
+          <li>
+            <input type="checkbox" id="checkAgree" required>
+            <label for="checkAgree">&nbsp; I agree with these terms*</label>
+          </li>
+          <li>
+            <input type="submit" value="Reserve!" class="submitBtn"></input>
+          </li>
+        </ul>
+
+      </fieldset>
+    </form>
   </main>
 
   <footer>
