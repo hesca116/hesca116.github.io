@@ -1,11 +1,11 @@
 /*----------- GENERAL -----------*/
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 body {
@@ -13,12 +13,15 @@ body {
   line-height: 1.4;
 }
 
-header{
-  padding: 1.5rem;
+main {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 header {
-  max-width: 960px;  
+  padding: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 header,
@@ -27,130 +30,198 @@ footer {
   color: black;
 }
 
-header nav{
-  font-family: 'BenchNine', sans-serif;
+header nav {
   text-transform: uppercase;
 }
 
 /*----------- GENERAL BODY STYLING -----------*/
 
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
 h1 {
-  text-align: left;
   text-transform: uppercase;
-  font-size: 2.1rem;
-  margin: 1.4rem 0 0 0;
+  font-size: 2.5rem;
+  margin: .5rem 0 0 0;
   font-family: 'BenchNine', sans-serif;
 }
 
 h2 {
   margin: 0.2em 0 0 0;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-family: 'BenchNine', sans-serif;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   margin: 0.2em;
   font-family: 'BenchNine', sans-serif;
 }
 
-h4{
+h4 {
   font-size: 12px;
   text-transform: uppercase;
   font-family: 'BenchNine', sans-serif;
-  margin: 0 0 1.5rem 0 ;
+  margin: 0 0 1.5rem 0;
 }
 
-p, span, a {
+p,
+a {
   font-family: 'Dosis', sans-serif;
-  font-size: 18px;
-  margin: .2rem 0;  
-}
-
-.ctaReservation {  
-  padding: 1em;
-  background-color: rgba(58, 168, 243, 0.3);  
-  position: relative;
-}
-
-.ctaReservation, .ctaReservation h1{
-  text-align: center;
-}
-
-.ctaReservation a{
-  text-decoration: none;
-  color: black;
   font-size: 20px;
-  padding-left: .8rem;  
+  margin: .2rem 0;
+  text-align: center;
 }
 
 /*----------- NAVIGATION MENU -----------*/
 
-
-
-/*nav{
-  border: 1px solid rgba(0,0,0,0.3);
-}
-*/
-
-.hamburguer{
+.hamburguer {
   float: right;
-  margin: .2rem 2%;  
+  margin: .2rem 2%;
   padding: 0;
   background-color: transparent;
   border: none;
   font-size: 2.1rem;
-  color:#58524E;
+  color: #58524E;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;  
+  padding: 0;
   overflow: hidden;
   font-family: 'BenchNine', sans-serif;
 }
 
-nav ul.hide{
-  display:none;
+nav ul.hide {
+  display: none;
 }
 
-nav ul li a{
+nav ul li a {
   display: block;
-  text-align: center; 
-  padding: .8rem 2%; /*make each item bigger for easy finger tapping*/
+  text-align: center;
+  padding: .8rem 2%;
+  /*make each item bigger for easy finger tapping*/
   text-decoration: none;
   font-size: 1.6em;
-  color: darkgrey;  
+  color: darkgrey;
 }
 
-nav ul li.nav--Active a{
-  color:#E73056;  
+nav ul li.nav--Active a {
+  color: #E73056;
 }
 
 nav ul li a:hover {
-  background-color:rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
 }
 
 /*----------- BODY STYLING -----------*/
-.heroImage{ 
-  width: 100%;
-  margin: 0;  
+
+/*----------- FORM  -----------*/
+form fieldset {
+  margin: 2rem 1rem;
+  border: 1px solid #3AA8F3;
+  border-radius: 10px;
+  padding: .5rem 2%;
 }
+
+form legend {
+  color: #3AA8F3;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1.6rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+}
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  margin: .2rem 0;
+}
+
+.flex-outer {
+  margin-right: 3rem;
+}
+
+.flex-outer li textarea,
+.flex-outer li input {
+  background-color: #e8e8e8;
+  border: 1px solid rgba(230, 230, 230, 0.7);
+}
+
+.flex-outer>li>label,
+.flex-outer li p,
+.flex-outer li div {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.comments p {
+  font-size: small;
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+
+.submitBtn {
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 8px 16px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.submitBtn:hover {
+  background-color: #3AA8F3;
+  color: white;
+
+}
+
+/*----------- MAPS -----------*/
+.mainBottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  justify-items: center;
+}
+
+.mainBottom iframe {
+  width: 100%;
+  height: 200px;
+}
+
+
 
 /*----------- GENERAL FOOTER STYLING -----------*/
-footer{
-  padding: 2rem; 
+footer {
+  padding: 2rem;
 }
 
-footer, footer span, footer a {       
+footer,
+footer span,
+footer a {
   font-size: 0.7rem;
   font-family: 'Dosis', sans-serif;
 }
 
-.footerBar{
-  text-align: center; 
+.footerBar {
+  text-align: center;
 }

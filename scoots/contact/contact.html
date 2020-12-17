@@ -33,22 +33,49 @@
   </header>
 
   <main>
+    <section class="mainTop">
+      <h1>Contact Us!</h1>
+      <form method="GET" action="success.html">
+        <fieldset>
+          <legend class="sub">Contact Form</legend>
+          <ul class="flex-outer">
+            <li>
+              <label for="name">Full Name*</label>
+              <input type="text" id="name" placeholder="Enter your full name here" required>
+            </li>
+            <li>
+              <label for="email">Email*</label>
+              <input type="email" id="email" placeholder="YourName@xyzmail.com" required>
+            </li>
+            <li>
+              <label for="message">Type Here: </label>
+              <textarea rows="6" id="message"
+                placeholder="i.e. Please deliver vehicles to (location). I would like 1 Honda Metro and 2 Honda DIOs. "></textarea>
+            </li>
+            <li>
+              <input type="submit" value="Contact Us!" class="submitBtn"></input>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+    <section class="mainBottom">
+      <h1>Our locations</h1>
+      <map name="puertaMaya">
+        <h2>Puerta Maya</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7633939693183!2d-86.97629447865049!3d20.474908960831005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5750d4770065%3A0x7358f32361f109b3!2sPuerta%20Maya%20Pirs!5e0!3m2!1ses-419!2scr!4v1608180439814!5m2!1ses-419!2scr"
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </map>
 
-    <map name="puertaMaya">
-      <h2>Puerta Maya</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7633939693183!2d-86.97629447865049!3d20.474908960831005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5750d4770065%3A0x7358f32361f109b3!2sPuerta%20Maya%20Pirs!5e0!3m2!1ses-419!2scr!4v1608180439814!5m2!1ses-419!2scr"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    </map>
-
-    <map name="ferryDock">
-      <h2>Ferry Dock from Playa del Carmen</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14949.11720871269!2d-86.97003139189572!3d20.494773540451764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scozumel%20ferry%20playa%20del%20carmen!5e0!3m2!1ses-419!2scr!4v1608180580455!5m2!1ses-419!2scr"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    </map>
+      <map name="ferryDock">
+        <h2>Ferry Dock from Playa del Carmen</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14949.11720871269!2d-86.97003139189572!3d20.494773540451764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scozumel%20ferry%20playa%20del%20carmen!5e0!3m2!1ses-419!2scr!4v1608180580455!5m2!1ses-419!2scr"
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </map>
+    </section>
 
   </main>
 
