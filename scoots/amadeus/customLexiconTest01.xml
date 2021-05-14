@@ -22,9 +22,17 @@
 
   <lexeme> 
 
-    <grapheme> Benigni </grapheme>
+    <grapheme>TIM</grapheme>
 
-    <phoneme> bɛˈniːnji</phoneme>
+    <alias>The Intelligent Monkey</alias>
+
+  </lexeme>
+
+  <lexeme> 
+
+    <grapheme>LAR</grapheme>
+
+    <alias>L.A.R.</alias>
 
   </lexeme>
 
