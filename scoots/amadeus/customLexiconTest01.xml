@@ -30,9 +30,17 @@
 
   <lexeme> 
 
-    <grapheme>LAR</grapheme>
+    <grapheme>WA</grapheme>
 
-    <alias>L.A.R.</alias>
+    <alias>Gourgeous painting</alias>
+
+  </lexeme>
+
+  <lexeme> 
+
+    <grapheme>IT</grapheme>
+
+    <alias>The dog is sad</alias>
 
   </lexeme>
 
