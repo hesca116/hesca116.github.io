@@ -48,7 +48,7 @@ header,
 body {
   margin: 1.25rem auto;
   max-width: 960px;
-  font-family: Oswald, sans-serif;
+  font-family: Lato, serif;
 }
 
 header,
@@ -122,27 +122,6 @@ h3 {
   font-size: 22px;
   font-family: 'Oswald', sans-serif;
 }
-
-/* START OF announcement*/
-
-.message{
-  display: none;
-  background-color: #E6E6E6;
-  padding: 2em;
-  margin: 2em;
-  box-shadow: 5px 10px;
-}
-.message section {
-  display: flex;
-}
-.message section p {
-  margin: 2em 0 0 1.5em;
-  font-size: 1.7em;
-}
-
-
-/* END of announcement*/
-
 
 
 /****************************BODY MAIN*********************************/
